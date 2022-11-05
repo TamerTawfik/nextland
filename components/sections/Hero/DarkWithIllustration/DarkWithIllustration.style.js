@@ -16,13 +16,16 @@ export const ContentSide = styled.div`${tw`mx-auto max-w-md px-4 sm:max-w-2xl sm
     ${tw`inline-flex items-center text-white bg-black rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200`}
   }
   .hiring {
-    ${tw`px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-indigo-500 rounded-full`}
+    ${tw`px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full`}
   }
   .arrowIcon {
     ${tw`ml-2 w-5 h-5 text-gray-500`}
   }
   h1 {
     ${tw`mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl`}
+  }
+  .slogn {
+    ${tw`pb-3 block bg-clip-text text-transparent bg-gradient-to-r from-teal-200 to-cyan-400 sm:pb-5`}
   }
   .paragraph {
     ${tw`mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl`}
@@ -34,7 +37,7 @@ export const ContentSide = styled.div`${tw`mx-auto max-w-md px-4 sm:max-w-2xl sm
     ${tw`block w-full px-4 py-3 rounded-md border-0 text-base text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300 focus:ring-offset-gray-900`}
   }
   button {
-    ${tw`block w-full py-3 px-4 rounded-md shadow bg-indigo-500 text-white font-medium hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-300 focus:ring-offset-gray-900`}
+    ${tw`block w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-400 focus:ring-offset-gray-900`}
   }
 `;
 

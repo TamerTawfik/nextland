@@ -2,7 +2,6 @@ import { Fragment } from 'react';
 import tw, { styled } from "twin.macro";
 import { Popover, Transition } from '@headlessui/react'
 import { FaBars, FaRegWindowClose } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa";
 import { Nav, PanelMenu } from "./SimpleNavbar.style";
 
 const navigation = [
@@ -25,7 +24,7 @@ export default function SimpleNavbar() {
                                 <span className="sr-only">Workflow</span>
                                 <img
                                     tw="h-8 w-auto sm:h-10"
-                                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                                    src="https://tailwindui.com/img/logos/workflow-mark-teal-200-cyan-400.svg"
                                     alt=""
                                 />
                             </a>
@@ -73,7 +72,7 @@ export default function SimpleNavbar() {
                             <div>
                                 <img
                                     tw="h-8 w-auto"
-                                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                                    src="https://tailwindui.com/img/logos/workflow-mark-teal-500-cyan-600.svg"
                                     alt=""
                                 />
                             </div>

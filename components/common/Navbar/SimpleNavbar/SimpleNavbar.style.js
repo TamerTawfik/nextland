@@ -33,13 +33,13 @@ export const PanelMenu = styled.div`${tw`rounded-lg shadow-md bg-white ring-1 ri
     ${tw`px-5 pt-4 flex items-center justify-between`}
   }
   .panelButton {
-    ${tw`bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-600`}
+    ${tw`bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-600`}
   }
   .linkItem {
     ${tw`block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50`}
   }
   .ctaButton {
-    ${tw`block text-center w-full py-3 px-4 rounded-md shadow bg-indigo-600 text-white font-medium hover:bg-indigo-700`}
+    ${tw`block text-center w-full py-3 px-4 rounded-md shadow bg-gradient-to-r from-teal-500 to-cyan-600 text-white font-medium hover:from-teal-600 hover:to-cyan-700`}
   }
   .text {
     ${tw`text-center text-base font-medium text-gray-500`}

@@ -36,12 +36,11 @@ export default function SplitWithImage({
                     </Text>
                     <LinkWrap>
                         <SecondaryLinkWrap>
-                            <Link href={secondaryLinkUrl} passHref>
-                                <SecondaryLink>
-                                    {secondaryLinkText}
-                                    <FaExternalLinkAlt className="-mr-1 ml-3 h-5 w-5 text-gray-300" />
-                                </SecondaryLink>
-                            </Link>
+
+                            <SecondaryLink href={secondaryLinkUrl}>
+                                {secondaryLinkText}
+                                <FaExternalLinkAlt className="-mr-1 ml-3 h-5 w-5 text-gray-300" />
+                            </SecondaryLink>
                         </SecondaryLinkWrap>
                     </LinkWrap>
                 </TextContainer>

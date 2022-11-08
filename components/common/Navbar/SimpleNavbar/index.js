@@ -1,8 +1,9 @@
-import { Fragment } from 'react';
+import { Fragment, useState, useEffect } from 'react';
 import tw, { styled } from "twin.macro";
 import { Popover, Transition } from '@headlessui/react'
 import { FaBars, FaRegWindowClose } from "react-icons/fa";
 import { Nav, PanelMenu } from "./SimpleNavbar.style";
+import ThemeButton from "../../ThemeButton";
 
 const navigation = [
     { name: 'Product', href: '#' },
@@ -12,6 +13,10 @@ const navigation = [
 ]
 
 export default function SimpleNavbar() {
+    // delay rendering any theme toggling UI until mounted on the client.
+    const [mounted, setMounted] = useState(false);
+    useEffect(() => setMounted(true), []);
+
     return (
         <Popover as="header" tw="relative">
             <div tw="bg-gray-900 pt-6">
@@ -44,15 +49,18 @@ export default function SimpleNavbar() {
                         </div>
                     </div>
                     <div className="ctaWrapper">
+                        <a className="linkItem">
+                            {mounted && <ThemeButton />}
+                        </a>
                         <a href="#" className="linkItem">
                             Log in
-              </a>
+                        </a>
                         <a
                             href="#"
                             className="ctaButton"
                         >
                             Start free trial
-              </a>
+                        </a>
                     </div>
                 </Nav>
             </div>

@@ -2,10 +2,10 @@ import { useTheme } from 'next-themes'
 import { FaRegSun, FaRegMoon } from "react-icons/fa"
 
 export default function ThemeButtton() {
-    const { theme, setTheme } = useTheme()
+    const { resolvedTheme, setTheme } = useTheme()
     return (
-        <button onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-            {theme === "dark" ? <FaRegSun /> : <FaRegMoon />}
+        <button onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}>
+            {resolvedTheme === "dark" ? <FaRegSun /> : <FaRegMoon />}
         </button>
     )
 }

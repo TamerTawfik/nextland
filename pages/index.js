@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import DarkWithIllustration from '../components/sections/Hero/DarkWithIllustration';
+import SimpleCentered from '../components/sections/Hero/SimpleCentered';
 
 export default function Home() {
   return (
@@ -10,7 +11,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <DarkWithIllustration />
+        {/* <DarkWithIllustration /> */}
+        <SimpleCentered />
       </main>
     </div>
   )

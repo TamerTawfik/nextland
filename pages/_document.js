@@ -29,7 +29,7 @@ export default class MyDocument extends Document {
                     />
                     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
                 </Head>
-                <body className="font-inter">
+                <body className="font-sans">
                     <Main />
                     <NextScript />
                 </body>

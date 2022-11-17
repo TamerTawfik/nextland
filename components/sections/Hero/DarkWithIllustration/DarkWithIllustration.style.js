@@ -21,7 +21,7 @@ export const ContentSide = styled.div`${tw`mx-auto max-w-md px-4 sm:max-w-2xl sm
   .arrowIcon {
     ${tw`ml-2 w-5 h-5 text-gray-500`}
   }
-  h1 {
+  .heading {
     ${tw`mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:text-6xl lg:mt-6 xl:text-6xl`}
   }
   .slogn {

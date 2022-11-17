@@ -1,8 +1,9 @@
 import tw, { styled } from "twin.macro";
 
-export const Container = tw.div`isolate bg-white`;
+export const Container = tw.div`isolate bg-gray-50`;
 
-export const HeroContainer = styled.div`${tw`mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40`}
+export const HeroContainer = styled.div`
+    ${tw`mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40`}
     .ctaWrapper {
         ${tw`hidden sm:mb-8 sm:flex sm:justify-center`}
     }

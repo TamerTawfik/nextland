@@ -2,7 +2,7 @@ import { Fragment, useState, useEffect } from 'react';
 import tw, { styled } from "twin.macro";
 import { Popover, Transition } from '@headlessui/react'
 import { FaBars, FaRegWindowClose } from "react-icons/fa";
-import { Nav, PanelMenu } from "./SimpleNavbar.style";
+import { Nav, PanelMenu } from "./simpleNavbar.style";
 import ThemeButton from "../../ThemeButton";
 
 const navigation = [

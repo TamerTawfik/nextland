@@ -2,7 +2,7 @@ import tw from "twin.macro";
 import { FaArrowRight } from "react-icons/fa";
 
 
-import { HeroContent, ContentSide, ImageSide } from "./DarkWithIllustration.style";
+import { HeroContent, ContentSide, ImageSide } from "./darkWithIllustration.style";
 
 export default function DarkWithIllustration() {
   return (
@@ -22,7 +22,7 @@ export default function DarkWithIllustration() {
                   <span tw="ml-4 text-sm">Visit our careers page</span>
                   <FaArrowRight className="arrowIcon" aria-hidden="true" />
                 </a>
-                <h1>
+                <h1 className="heading">
                   <span tw="block">A better way to</span>
                   <span className="slogn">ship web apps</span>
                 </h1>

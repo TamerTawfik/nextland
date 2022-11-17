@@ -1,6 +1,7 @@
 import tw, { styled } from "twin.macro";
 
-export const Nav = styled.div`${tw`flex h-9 items-center justify-between`}
+export const Nav = styled.div`
+    ${tw`flex h-9 items-center justify-between bg-transparent`}
     .logoWrapper {
         ${tw`flex lg:min-w-0 lg:flex-1`}
         a {${tw`-m-1.5 p-1.5`}}

@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import SimpleCentered from '../components/sections/Hero/SimpleCentered';
+import CenteredNavbar from '../components/common/Navbar/CenteredNavbar';
 
 export default function Home() {
   return (
@@ -10,8 +11,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <CenteredNavbar />
         {/* Hero section with Navigation */}
-        <SimpleCentered />
+        {/* <SimpleCentered /> */}
       </main>
     </>
   )

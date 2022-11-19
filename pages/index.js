@@ -1,7 +1,17 @@
 import Head from 'next/head';
-import SimpleCentered from '../components/sections/Hero/SimpleCentered';
 import CenteredNavbar from '../components/common/Navbar/CenteredNavbar';
 import DarkWithIllustration from "../components/sections/Hero/DarkWithIllustration";
+import SimpleInCard from '../components/sections/Stat/SimpleInCard';
+import GridWithOffseetIcons from '../components/sections/Feature/GridWithOffseetIcons';
+import AlternativeSidesWithImage from '../components/sections/Feature/AlternativeSidesWithImage';
+import SimpleCenter from "../components/sections/CTA/SimpleCenter";
+import SplitWithImage from "../components/sections/CTA/SplitWithImage";
+import WithLargeAvatar from "../components/sections/Testimonial/WithLargeAvatar";
+import LogoCloud from "../components/sections/Logo/simple";
+import CenteredAccordion from "../components/sections/FAQ/CenteredAccordion";
+import CardsWith3column from "../components/sections/Blog/CardsWith3column";
+import MissonWith4Column from "../components/sections/Footer/MissonWith4Column";
+
 
 export default function Home() {
   return (
@@ -15,8 +25,22 @@ export default function Home() {
         <CenteredNavbar />
         {/* Hero section with Navigation */}
         <DarkWithIllustration />
-        {/* <SimpleCentered /> */}
+        {/* Stats Section */}
+        <SimpleInCard />
+        {/* Feature Section */}
+        {/* <BrandWith4x2Grid /> */}
+        <GridWithOffseetIcons />
+        <AlternativeSidesWithImage />
+        <SimpleCenter />
+        <WithLargeAvatar />
+        <LogoCloud />
+        <CardsWith3column />
+        <CenteredAccordion />
+        <SplitWithImage />
       </main>
+      <footer>
+        <MissonWith4Column />
+      </footer>
     </>
   )
 }

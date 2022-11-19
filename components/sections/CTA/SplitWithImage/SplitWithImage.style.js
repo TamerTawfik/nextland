@@ -1,10 +1,10 @@
 // twin-macro
 import tw from 'twin.macro';
 
-export const BackgroundContainer = tw.div`relative bg-gray-900`;
+export const BackgroundContainer = tw.div`relative bg-eerie`;
 export const LeftCol = tw.div`relative h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2`;
 export const Image = tw.img`w-full h-full object-cover`;
-export const BgGradient = tw.div`absolute inset-0 bg-gradient-to-r from-teal-500 to-cyan-600 mix-blend-multiply`;
+export const BgGradient = tw.div`absolute inset-0 bg-gradient-to-r from-brand to-brand mix-blend-multiply`;
 export const RightCol = tw.div`relative mx-auto max-w-md px-4 py-12 sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:py-32`;
 export const TextContainer = tw.div`md:ml-auto md:w-1/2 md:pl-10`;
 export const Heading = tw.h2`text-base font-semibold uppercase tracking-wider text-gray-300`;

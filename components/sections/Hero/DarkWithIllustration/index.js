@@ -40,18 +40,18 @@ export default function DarkWithIllustration() {
                         <input
                           id="email"
                           type="email"
-                          placeholder="Enter your email"
+                          placeholder="Subscribe Newsletter"
                         />
                       </div>
                       <div tw="mt-3 sm:mt-0 sm:ml-3">
                         <button
                           type="submit"
                         >
-                          Start free trial
+                          Subscribe
                           </button>
                       </div>
                     </div>
-                    <p tw="mt-3 text-sm text-gray-300 sm:mt-4">
+                    <p tw="mt-3 text-sm text-eerie sm:mt-4">
                       Start your free 14-day trial, no credit card necessary. By providing your email, you agree to
                         our{' '}
                       <a href="#" tw="font-medium text-white">
@@ -67,7 +67,7 @@ export default function DarkWithIllustration() {
               <div>
                 {/* Illustration taken from Lucid Illustrations: https://lucid.pixsellz.io/ */}
                 <img
-                  src="https://tailwindui.com/img/component-images/cloud-illustration-teal-cyan.svg"
+                  src="./images/hero-3-img.png"
                   alt=""
                 />
               </div>

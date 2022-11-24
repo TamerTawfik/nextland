@@ -1,6 +1,6 @@
 import tw, { styled } from "twin.macro";
 
-export const Container = tw.div`isolate bg-gray-50`;
+export const Container = tw.div`isolate bg-transparent`;
 
 export const HeroContainer = styled.div`
     ${tw`mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40`}
@@ -12,7 +12,7 @@ export const HeroContainer = styled.div`
         a {${tw`font-semibold text-indigo-600`}}
     }
     .heading {
-        ${tw`text-4xl font-bold tracking-tight sm:text-center sm:text-6xl`}
+        ${tw`text-4xl text-foreground font-bold tracking-tight sm:text-center sm:text-6xl`}
     }
     p {
         ${tw`mt-6 text-lg leading-8 text-gray-600 sm:text-center`}

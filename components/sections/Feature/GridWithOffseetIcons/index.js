@@ -24,7 +24,7 @@ const features = [
   },
   {
     name: 'Simple Queues',
-    description: 'Rerum quas incidunt deleniti quaerat suscipit mollitia. Amet repellendus ut odit dolores qui.',
+    description: 'Rerum quas incidunt deleniti quaerat suscipit mollitia. Amet repellendus ut odit dolores qui vitae lobortis.',
     icon: FaShare,
   },
   {

@@ -41,7 +41,7 @@ export default function SimpleCentered() {
                     <div>
                         <div className="ctaWrapper">
                             <div className="cta">
-                                <span tw="text-gray-600">
+                                <span>
                                     Announcing our next round of funding.{' '}
                                     <a href="#">
                                         <span tw="absolute inset-0" aria-hidden="true" />
@@ -64,16 +64,14 @@ export default function SimpleCentered() {
                                     className="getStarted"
                                 >
                                     Get started
-                                        <span tw="text-indigo-200" aria-hidden="true">
-                                        &rarr;
-                                        </span>
+                                       
                                 </a>
                                 <a
                                     href="#"
                                     className="liveDemo"
                                 >
                                     Live demo
-                                        <span tw="text-gray-400" aria-hidden="true">
+                                        <span tw="ml-1" aria-hidden="true">
                                         &rarr;
                                         </span>
                                 </a>

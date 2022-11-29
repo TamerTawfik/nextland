@@ -64,7 +64,7 @@ export default function CardsWith3column() {
   return (
     <Container>
       <div tw="absolute inset-0">
-        <div tw="bg-white h-1/3 sm:h-2/3" />
+        <div tw="bg-background h-1/3 sm:h-2/3" />
       </div>
       <div tw="relative max-w-7xl mx-auto">
         <Header>

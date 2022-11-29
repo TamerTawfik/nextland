@@ -15,7 +15,7 @@ export const Nav = styled.div`
     }
     .navButton {
         ${tw`hidden lg:flex lg:min-w-0 lg:flex-auto lg:justify-end`}
-        .CTA {${tw`inline-block rounded-lg px-3 py-1.5 text-sm font-semibold leading-6 bg-foreground text-background shadow-sm ring-1 hover:ring-foreground hover:bg-background hover:text-foreground`}}
+        .CTA {${tw`inline-block rounded-lg px-3 py-1.5 text-sm font-medium leading-6 bg-foreground text-background shadow-sm ring-1 hover:ring-foreground hover:bg-background hover:text-foreground`}}
     }    
 `;
 

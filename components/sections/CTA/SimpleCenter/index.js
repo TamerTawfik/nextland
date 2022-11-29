@@ -2,7 +2,7 @@ import Link from 'next/link';
 // twin-macro
 import tw, { styled } from 'twin.macro';
 
-const BackgroundContainer = tw.div`bg-brand`;
+const BackgroundContainer = tw.div`bg-success`;
 const Container = tw.div`max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8`;
 const Heading = styled.h2`${tw`text-3xl font-extrabold text-white sm:text-4xl`}
 span {

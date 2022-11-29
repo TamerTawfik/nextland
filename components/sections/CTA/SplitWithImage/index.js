@@ -39,7 +39,7 @@ export default function SplitWithImage({
 
                             <SecondaryLink href={secondaryLinkUrl}>
                                 {secondaryLinkText}
-                                <FaExternalLinkAlt className="-mr-1 ml-3 h-5 w-5 text-gray-300" />
+                                <FaExternalLinkAlt className="-mr-1 ml-3 h-5 w-5 text-accents_5" />
                             </SecondaryLink>
                         </SecondaryLinkWrap>
                     </LinkWrap>

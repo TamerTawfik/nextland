@@ -43,43 +43,44 @@ const communicationFeatures = [
   },
 ]
 
-const BackgroundContainer = tw.div`py-16 bg-lotion overflow-hidden lg:py-24`;
+const BackgroundContainer = tw.div`py-16 bg-background overflow-hidden lg:py-24`;
 const Container = tw.div`relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl`;
-const Heading = tw.h2`text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl`;
-const HeadingText = tw.p`mt-4 max-w-3xl mx-auto text-center text-xl text-gray-500`;
+const Heading = tw.h2`text-center text-3xl leading-8 font-extrabold tracking-tight text-foreground sm:text-4xl`;
+const HeadingText = tw.p`mt-4 max-w-3xl mx-auto text-center text-xl text-accents_5`;
 const FirstContent = styled.div`${tw`relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center`}
   h3 {
-    ${tw`text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl`}
+    ${tw`text-2xl font-extrabold text-foreground tracking-tight sm:text-3xl`}
   }
   p {
-    ${tw`mt-3 text-lg text-gray-500`}
+    ${tw`mt-3 text-lg text-accents_5`}
   }
 `;
 const FirstContentList = styled.dl`${tw`mt-10 space-y-10`}
   p {
-    ${tw`ml-16 text-lg leading-6 font-medium text-gray-900`}
+    ${tw`ml-16 text-lg leading-6 font-medium text-accents_7`}
   }
   dd {
-    ${tw`mt-2 ml-16 text-base text-gray-500`}
+    ${tw`mt-2 ml-16 text-base text-accents_5`}
   }
 `;
-const IconWrap = tw.div`absolute flex items-center justify-center h-12 w-12 rounded-md bg-brand text-white`;
+const IconWrap = tw.div`absolute flex items-center justify-center h-12 w-12 rounded-md bg-success text-foreground`;
 const FirstContentImage = tw.div`mt-10 -mx-4 relative lg:mt-0`;
-const SecondContent = styled.div`${tw`relative mt-12 sm:mt-16 lg:mt-24`}
+const SecondContent = styled.div`
+  ${tw`relative mt-12 sm:mt-16 lg:mt-24`}
   h3 {
-    ${tw`text-2xl font-extrabold text-gray-900 tracking-tight sm:text-3xl`}
+    ${tw`text-2xl font-extrabold text-foreground tracking-tight sm:text-3xl`}
   }
   p {
-    ${tw`mt-3 text-lg text-gray-500`}
+    ${tw`mt-3 text-lg text-accents_5`}
   }
 `;
 const SeccondContentGrid = tw.div`lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center`;
 const SeconContetnList = styled.dl`${tw`mt-10 space-y-10`}
   p {
-    ${tw`ml-16 text-lg leading-6 font-medium text-gray-900`}
+    ${tw`ml-16 text-lg leading-6 font-medium text-accents_7`}
   }
   dd {
-    ${tw`mt-2 ml-16 text-base text-gray-500`}
+    ${tw`mt-2 ml-16 text-base text-accents_5`}
   }
 `;
 const SecondContentImage = tw.div`mt-10 -mx-4 relative lg:mt-0 lg:col-start-1`;
@@ -105,7 +106,7 @@ export default function AlternativeSidesWithImage() {
               height={20}
               patternUnits="userSpaceOnUse"
             >
-              <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
+              <rect x={0} y={0} width={4} height={4} className="text-accents_2" fill="currentColor" />
             </pattern>
           </defs>
           <rect width={404} height={784} fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)" />
@@ -164,7 +165,7 @@ export default function AlternativeSidesWithImage() {
                   height={20}
                   patternUnits="userSpaceOnUse"
                 >
-                  <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
+                  <rect x={0} y={0} width={4} height={4} className="text-accents_2" fill="currentColor" />
                 </pattern>
               </defs>
               <rect width={784} height={404} fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
@@ -195,7 +196,7 @@ export default function AlternativeSidesWithImage() {
               height={20}
               patternUnits="userSpaceOnUse"
             >
-              <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
+              <rect x={0} y={0} width={4} height={4} className="text-accents_2" fill="currentColor" />
             </pattern>
           </defs>
           <rect width={404} height={784} fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
@@ -243,7 +244,7 @@ export default function AlternativeSidesWithImage() {
                     height={20}
                     patternUnits="userSpaceOnUse"
                   >
-                    <rect x={0} y={0} width={4} height={4} className="text-gray-200" fill="currentColor" />
+                    <rect x={0} y={0} width={4} height={4} className="text-accents_2" fill="currentColor" />
                   </pattern>
                 </defs>
                 <rect width={784} height={404} fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" />

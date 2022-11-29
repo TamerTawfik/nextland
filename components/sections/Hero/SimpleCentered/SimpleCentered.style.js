@@ -8,19 +8,19 @@ export const HeroContainer = styled.div`
         ${tw`hidden sm:mb-8 sm:flex sm:justify-center`}
     }
     .cta {
-        ${tw`relative overflow-hidden rounded-full py-1.5 px-4 text-sm leading-6 ring-1 ring-gray-900/10 hover:ring-gray-900/20`}
-        a {${tw`font-semibold text-indigo-600`}}
+        ${tw`relative overflow-hidden rounded-full py-1.5 px-4 text-sm font-thin leading-6 ring-1 ring-accents_2  bg-accents_1 text-foreground`}
+        a {${tw`font-semibold text-success hover:text-successLight`}}
     }
     .heading {
         ${tw`text-4xl text-foreground font-bold tracking-tight sm:text-center sm:text-6xl`}
     }
     p {
-        ${tw`mt-6 text-lg leading-8 text-gray-600 sm:text-center`}
+        ${tw`mt-6 text-lg leading-8 text-accents_5 sm:text-center`}
     }
     .getStarted {
-        ${tw`inline-block rounded-lg bg-indigo-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-indigo-600 hover:bg-indigo-700 hover:ring-indigo-700`}
+        ${tw`inline-block rounded-md bg-foreground hover:bg-background px-8 py-1.5 text-base font-medium leading-7 text-background hover:text-foreground shadow-inner ring-1 ring-foreground`}
     }
     .liveDemo {
-        ${tw`inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20`}
+        ${tw`inline-block rounded-md bg-success hover:bg-background px-8 py-1.5 text-base font-medium leading-7 text-foreground hover:text-success ring-1 ring-success`}
     }
 `;

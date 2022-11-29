@@ -94,7 +94,7 @@ const navigation = {
 
 export default function MissonWith4Column() {
   return (
-    <footer tw="bg-gray-50" aria-labelledby="footer-heading">
+    <footer tw="bg-background" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>

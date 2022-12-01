@@ -1,3 +1,5 @@
+import { useEffect, useRef } from "react";
+import { animate, motion } from "framer-motion";
 import tw from "twin.macro";
 import Navbar from "../../../common/Navbar/CenteredNavbar";
 import { Container, HeroContainer } from "./simpleCentered.style";
@@ -37,10 +39,11 @@ export default function SimpleCentered() {
             </div> */}
             <Navbar />
             <div tw="relative px-6 lg:px-8">
-                <HeroContainer>
+                <HeroContainer className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-900 via-black to-black">
                     <div>
                         <div className="ctaWrapper">
                             <div className="cta">
+                            <span className="text-xs bg-successDark rounded-full text-white px-2 py-1 mr-3">News</span> 
                                 <span>
                                     Announcing our next round of funding.{' '}
                                     <a href="#">

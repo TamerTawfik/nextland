@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import SimpleCentered from "../components/sections/Hero/SimpleCentered";
 import SimpleInCard from '../components/sections/Stat/SimpleInCard';
+import Simple from "../components/sections/Logo/Simple";
 // import GridWithOffseetIcons from '../components/sections/Feature/GridWithOffseetIcons';
 // import AlternativeSidesWithImage from '../components/sections/Feature/AlternativeSidesWithImage';
 // import ThreeTiersWithEmphasized from "../components/sections/Pricing/ThreeTiersWithEmphasized";
@@ -24,6 +25,7 @@ export default function Home() {
       <main className="bg-background">
         {/* Hero section with Navigation */}
         <SimpleCentered />
+        <Simple />
         {/* Stats Section */}
         <SimpleInCard />
         {/* Feature Section */}

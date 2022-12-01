@@ -41,7 +41,7 @@ export default function SimpleCentered() {
             <div tw="relative px-6 lg:px-8">
                 <HeroContainer className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-900 via-black to-black">
                     <div>
-                        <div className="ctaWrapper">
+                        {/* <div className="ctaWrapper">
                             <div className="cta">
                             <span className="text-xs bg-successDark rounded-full text-white px-2 py-1 mr-3">News</span> 
                                 <span>
@@ -52,14 +52,13 @@ export default function SimpleCentered() {
                                     </a>
                                 </span>
                             </div>
-                        </div>
+                        </div> */}
                         <div>
                             <h1 className="heading">
-                                Data to enrich your online business
+                            AI & Machine Learning Development
                                 </h1>
                             <p>
-                                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt
-                                amet fugiat veniam occaecat fugiat aliqua.
+                            We engineer practical data-driven algorithms to implement machine learning solutions for startups by separating the AI hype from computational realities.
                                 </p>
                             <div tw="mt-8 flex gap-x-4 sm:justify-center">
                                 <a

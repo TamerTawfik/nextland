@@ -66,7 +66,7 @@ export default function GridWithOffseetIcons() {
                   <div className="-mt-6">
                     <div>
                       <span>
-                        <feature.icon tw="h-6 w-6 text-white" aria-hidden="true" />
+                        <feature.icon tw="h-6 w-6 text-alert" aria-hidden="true" />
                       </span>
                     </div>
                     <h3>{feature.name}</h3>

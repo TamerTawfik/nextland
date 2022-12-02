@@ -2,7 +2,7 @@ import Head from 'next/head';
 import SimpleCentered from "../components/sections/Hero/SimpleCentered";
 import SimpleInCard from '../components/sections/Stat/SimpleInCard';
 import Simple from "../components/sections/Logo/Simple";
-// import GridWithOffseetIcons from '../components/sections/Feature/GridWithOffseetIcons';
+import GridWithOffseetIcons from '../components/sections/Feature/GridWithOffseetIcons';
 // import AlternativeSidesWithImage from '../components/sections/Feature/AlternativeSidesWithImage';
 // import ThreeTiersWithEmphasized from "../components/sections/Pricing/ThreeTiersWithEmphasized";
 // import SimpleCenter from "../components/sections/CTA/SimpleCenter";
@@ -27,10 +27,10 @@ export default function Home() {
         <SimpleCentered />
         <Simple />
         {/* Stats Section */}
-        <SimpleInCard />
+        {/* <SimpleInCard /> */}
         {/* Feature Section */}
-        {/* <GridWithOffseetIcons />
-        <AlternativeSidesWithImage />
+        <GridWithOffseetIcons />
+        {/* <AlternativeSidesWithImage />
         <ThreeTiersWithEmphasized />
         <SimpleCenter />
         <WithLargeAvatar />

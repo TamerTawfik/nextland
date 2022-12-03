@@ -5,12 +5,15 @@ export const Container = tw.div`isolate bg-transparent`;
 export const HeroContainer = styled.div`
     ${tw`mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40`}
     .ctaWrapper {
-        ${tw`hidden sm:mb-8 sm:flex sm:justify-center`}
+        ${tw`hidden sm:mb-4 sm:flex sm:justify-center`}
     }
     .cta {
         ${tw`relative overflow-hidden rounded-full py-1.5 px-4 text-sm font-thin leading-6 ring-1 ring-accents_2  bg-accents_1 text-accents_8`}
         a {${tw`font-thin text-success hover:text-successLight`}}
     }
+    .slogan {
+        ${tw` text-xl uppercase font-black bg-clip-text text-transparent bg-gradient-to-tr from-foreground to-accents_6 tracking-tight sm:text-3xl `}
+      }
     .heading {
         ${tw` h-32 text-4xl  text-transparent  font-bold bg-clip-text bg-gradient-to-r from-success via-cyan to-success animate-text tracking-tight sm:text-center sm:text-6xl`}
     }

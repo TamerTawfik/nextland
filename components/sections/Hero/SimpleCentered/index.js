@@ -41,8 +41,9 @@ export default function SimpleCentered() {
             <div tw="relative px-6 lg:px-8">
                 <HeroContainer className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-900 via-black to-black">
                     <div>
-                        {/* <div className="ctaWrapper">
-                            <div className="cta">
+                        <div className="ctaWrapper">
+                            <p className="slogan">i-max</p>
+                            {/* <div className="cta">
                             <span className="text-xs bg-successDark rounded-full text-white px-2 py-1 mr-3">News</span> 
                                 <span>
                                     Announcing our next round of funding.{' '}
@@ -51,8 +52,8 @@ export default function SimpleCentered() {
                                             Read more <span aria-hidden="true">&rarr;</span>
                                     </a>
                                 </span>
-                            </div>
-                        </div> */}
+                            </div> */}
+                        </div>
                         <div>
                             <h1 className="heading">
                             AI & Machine Learning Development

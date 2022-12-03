@@ -2,6 +2,7 @@
 import tw, { styled } from "twin.macro";
 // react-icons
 import { FaGlobe, FaRocket, FaSatelliteDish, FaScroll, FaBalanceScale } from "react-icons/fa";
+import { BackgroundContainer, Container, Heading, HeadingText, FirstContent, FirstContentList, FirstContentImage, IconWrap, SeccondContentGrid, SeconContetnList, SecondContent, SecondContentImage } from "./alternativeSidesWithImage.style";
 
 const transferFeatures = [
   {
@@ -43,53 +44,12 @@ const communicationFeatures = [
   },
 ]
 
-const BackgroundContainer = tw.div`py-16 bg-background overflow-hidden lg:py-24`;
-const Container = tw.div`relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl`;
-const Heading = tw.h2`text-center text-3xl leading-8 font-extrabold tracking-tight text-foreground sm:text-4xl`;
-const HeadingText = tw.p`mt-4 max-w-3xl mx-auto text-center text-xl text-accents_5`;
-const FirstContent = styled.div`${tw`relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center`}
-  h3 {
-    ${tw`text-2xl font-extrabold text-foreground tracking-tight sm:text-3xl`}
-  }
-  p {
-    ${tw`mt-3 text-lg text-accents_5`}
-  }
-`;
-const FirstContentList = styled.dl`${tw`mt-10 space-y-10`}
-  p {
-    ${tw`ml-16 text-lg leading-6 font-medium text-accents_7`}
-  }
-  dd {
-    ${tw`mt-2 ml-16 text-base text-accents_5`}
-  }
-`;
-const IconWrap = tw.div`absolute flex items-center justify-center h-12 w-12 rounded-md bg-success text-foreground`;
-const FirstContentImage = tw.div`mt-10 -mx-4 relative lg:mt-0`;
-const SecondContent = styled.div`
-  ${tw`relative mt-12 sm:mt-16 lg:mt-24`}
-  h3 {
-    ${tw`text-2xl font-extrabold text-foreground tracking-tight sm:text-3xl`}
-  }
-  p {
-    ${tw`mt-3 text-lg text-accents_5`}
-  }
-`;
-const SeccondContentGrid = tw.div`lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center`;
-const SeconContetnList = styled.dl`${tw`mt-10 space-y-10`}
-  p {
-    ${tw`ml-16 text-lg leading-6 font-medium text-accents_7`}
-  }
-  dd {
-    ${tw`mt-2 ml-16 text-base text-accents_5`}
-  }
-`;
-const SecondContentImage = tw.div`mt-10 -mx-4 relative lg:mt-0 lg:col-start-1`;
 
 export default function AlternativeSidesWithImage() {
   return (
     <BackgroundContainer>
       <Container>
-        <svg
+        {/* <svg
           className="hidden lg:block absolute left-full transform -translate-x-1/2 -translate-y-1/4"
           width={404}
           height={784}
@@ -110,7 +70,7 @@ export default function AlternativeSidesWithImage() {
             </pattern>
           </defs>
           <rect width={404} height={784} fill="url(#b1e6e422-73f8-40a6-b5d9-c8586e37e0e7)" />
-        </svg>
+        </svg> */}
         {/* the Heading Wrap */}
         <div tw="relative">
           <Heading>
@@ -149,7 +109,7 @@ export default function AlternativeSidesWithImage() {
           </div>
 
           <FirstContentImage aria-hidden="true">
-            <svg
+            {/* <svg
               className="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden"
               width={784}
               height={404}
@@ -169,17 +129,36 @@ export default function AlternativeSidesWithImage() {
                 </pattern>
               </defs>
               <rect width={784} height={404} fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)" />
+            </svg> */}
+
+            <svg className="hidden lg:block absolute left-full transform -translate-x-full translate-y-1/4 blur-3xl opacity-75" width="100%" height="100%" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_17_19)">
+                <g filter="url(#filter0_f_17_19)">
+                  <path d="M128.6 0H0V322.2L106.2 134.75L128.6 0Z" fill="#AE03FF"></path>
+                  <path d="M0 322.2V400H240H320L106.2 134.75L0 322.2Z" fill="#FF016C"></path>
+                  <path d="M320 400H400V78.75L106.2 134.75L320 400Z" fill="#AE03FF"></path>
+                  <path d="M400 0H128.6L106.2 134.75L400 78.75V0Z" fill="#EB00FF"></path>
+                </g>
+              </g>
+              <defs>
+                <filter id="filter0_f_17_19" x="-160.333" y="-160.333" width="720.666" height="720.666" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                  <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+                  <feGaussianBlur stdDeviation="80.1666" result="effect1_foregroundBlur_17_19"></feGaussianBlur>
+                </filter>
+              </defs>
             </svg>
+
             <img
               tw="relative mx-auto"
               width={490}
-              src="https://tailwindui.com/img/features/feature-example-1.png"
+              src="./images/just-code-dark-2.svg"
               alt=""
             />
           </FirstContentImage>
         </FirstContent>
         {/* the second side */}
-        <svg
+        {/* <svg
           className="hidden lg:block absolute right-full transform translate-x-1/2 translate-y-12"
           width={404}
           height={784}
@@ -200,7 +179,7 @@ export default function AlternativeSidesWithImage() {
             </pattern>
           </defs>
           <rect width={404} height={784} fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
-        </svg>
+        </svg> */}
 
         <SecondContent>
           <SeccondContentGrid>
@@ -227,7 +206,7 @@ export default function AlternativeSidesWithImage() {
             </div>
 
             <SecondContentImage>
-              <svg
+              {/* <svg
                 className="absolute left-1/2 transform -translate-x-1/2 translate-y-16 lg:hidden"
                 width={784}
                 height={404}
@@ -248,11 +227,11 @@ export default function AlternativeSidesWithImage() {
                   </pattern>
                 </defs>
                 <rect width={784} height={404} fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" />
-              </svg>
+              </svg> */}
               <img
                 tw="relative mx-auto"
                 width={490}
-                src="https://tailwindui.com/img/features/feature-example-2.png"
+                src="./images/just-code-dark-2.svg"
                 alt=""
               />
             </SecondContentImage>

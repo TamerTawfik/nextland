@@ -5,7 +5,7 @@ import { BackgroundContainer, HeaderWrap, Header, StatsWrap, Stat1, Stat2, Stat3
 export default function SimpleInCard() {
   return (
     <BackgroundContainer>
-      <HeaderWrap>
+      {/* <HeaderWrap>
         <Header>
           <h2>
             Trusted by developers from over 80 planets
@@ -14,7 +14,7 @@ export default function SimpleInCard() {
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus repellat laudantium.
           </p>
         </Header>
-      </HeaderWrap>
+      </HeaderWrap> */}
       <StatsWrap>
         <div tw="relative">
           <div className="bg" />
@@ -28,6 +28,10 @@ export default function SimpleInCard() {
                 <Stat2>
                   <dt className="label">Delivery</dt>
                   <dd className="value">24/7</dd>
+                </Stat2>
+                <Stat2>
+                  <dt className="label">Customer</dt>
+                  <dd className="value">50+</dd>
                 </Stat2>
                 <Stat3>
                   <dt className="label">Calories</dt>

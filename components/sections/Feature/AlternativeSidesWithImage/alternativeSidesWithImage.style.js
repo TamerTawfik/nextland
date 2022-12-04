@@ -32,7 +32,7 @@ export const SecondContent = styled.div`
     ${tw`mt-3 text-lg text-accents_5`}
   }
 `;
-export const SeccondContentGrid = tw.div`lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center`;
+export const SeccondContentGrid = tw.div`lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:gap-8 lg:items-center mb-24`;
 export const SeconContetnList = styled.dl`${tw`mt-10 space-y-10`}
   p {
     ${tw`ml-16 text-lg leading-6 font-medium bg-clip-text text-transparent bg-gradient-to-tr from-foreground to-accents_6`}

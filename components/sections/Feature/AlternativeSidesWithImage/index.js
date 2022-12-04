@@ -152,7 +152,7 @@ export default function AlternativeSidesWithImage() {
             <img
               tw="relative mx-auto"
               width={490}
-              src="./images/just-code-dark-2.svg"
+              src="./images/dashboard-dark.png"
               alt=""
             />
           </FirstContentImage>
@@ -228,10 +228,27 @@ export default function AlternativeSidesWithImage() {
                 </defs>
                 <rect width={784} height={404} fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)" />
               </svg> */}
+              <svg className="hidden lg:block absolute left-full transform -translate-x-full translate-y-1/4 blur-3xl opacity-75" width="100%" height="100%" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_17_19)">
+                  <g filter="url(#filter0_f_17_19)">
+                    <path d="M128.6 0H0V322.2L106.2 134.75L128.6 0Z" fill="#AE03FF"></path>
+                    <path d="M0 322.2V400H240H320L106.2 134.75L0 322.2Z" fill="#FF016C"></path>
+                    <path d="M320 400H400V78.75L106.2 134.75L320 400Z" fill="#AE03FF"></path>
+                    <path d="M400 0H128.6L106.2 134.75L400 78.75V0Z" fill="#EB00FF"></path>
+                  </g>
+                </g>
+                <defs>
+                  <filter id="filter0_f_17_19" x="-160.333" y="-160.333" width="720.666" height="720.666" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+                    <feGaussianBlur stdDeviation="80.1666" result="effect1_foregroundBlur_17_19"></feGaussianBlur>
+                  </filter>
+                </defs>
+              </svg>
               <img
                 tw="relative mx-auto"
                 width={490}
-                src="./images/just-code-dark-2.svg"
+                src="./images/mobile.png"
                 alt=""
               />
             </SecondContentImage>

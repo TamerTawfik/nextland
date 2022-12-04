@@ -25,12 +25,12 @@ export const StatsWrap = styled.div`
 `;
 
 export const Stats = styled.dl`
-  ${tw`rounded-lg bg-background shadow-lg sm:grid sm:grid-cols-3`}
+  ${tw`rounded-lg bg-background shadow-lg sm:grid sm:grid-cols-4`}
   .label {
-    ${tw`order-2 mt-2 text-lg leading-6 font-medium text-accents_5`}
+    ${tw`order-2 mt-2 text-lg leading-6 font-medium text-secondary`}
   }
   .value {
-    ${tw`order-1 text-5xl font-extrabold text-success`}
+    ${tw`order-1 text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-[#09662b] via[#09662b] to-[#0cce6b]`}
   }
 `;
 

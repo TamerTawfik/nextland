@@ -3,7 +3,7 @@ import tw, { styled } from 'twin.macro';
 //headlessui/react
 import { Disclosure } from '@headlessui/react';
 //react0icons
-import { FaChevronDown } from 'react-icons/fa';
+import { HiChevronDown } from "react-icons/hi2";
 
 const faqs = [
   {
@@ -49,7 +49,7 @@ const Heading = tw.h2`text-center text-3xl font-extrabold text-foreground sm:tex
 const List = styled.dl`
   ${tw`mt-6 space-y-6 divide-y divide-accents_2`}
   .arrow {
-    ${tw`text-left w-full flex justify-between items-start text-success`}
+    ${tw`text-left w-full flex justify-between items-start text-[#fc6d26]`}
   }
   .question {
     ${tw`font-medium text-foreground`}
@@ -77,7 +77,7 @@ export default function CenteredAccordion() {
                       <Disclosure.Button className="arrow">
                         <span className="question">{faq.question}</span>
                         <span>
-                          <FaChevronDown
+                          <HiChevronDown
                             className={classNames(open ? '-rotate-180' : 'rotate-0', 'h-6 w-6 transform')}
                             aria-hidden="true"
                           />

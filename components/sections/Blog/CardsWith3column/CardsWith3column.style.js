@@ -5,13 +5,13 @@ export const Container = tw.div`relative bg-background pt-16 pb-20 px-4 sm:px-6 
 export const Header = styled.div`
   ${tw`text-center`}
   h2 {
-    ${tw`text-base font-semibold tracking-wider text-success uppercase`}
+    ${tw`h-10 text-2xl  tracking-wider  uppercase font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#FF4D4D] via-[#fc6d26] to-[#F9CB28]`}
   }
   h3 {
-    ${tw`mt-2 text-3xl font-extrabold text-foreground tracking-tight sm:text-4xl`}
+    ${tw`mt-3 h-20 text-3xl font-black bg-clip-text text-transparent bg-gradient-to-tr from-foreground to-accents_6 tracking-tight sm:text-5xl`}
   }
   p {
-    ${tw`mt-3 max-w-2xl mx-auto text-xl text-accents_5 sm:mt-4`}
+    ${tw`mt-1 max-w-prose mx-auto text-xl text-secondary leading-8`}
   }
 `;
 export const BlogCard = styled.div`
@@ -26,13 +26,13 @@ export const BlogCard = styled.div`
     ${tw`flex-1 bg-accents_1 p-6 flex flex-col justify-between`}
   }
   .categoryName {
-    ${tw`text-sm font-medium text-success`}
+    ${tw`text-sm font-medium text-[#fc6d26]`}
   }
   .title {
     ${tw`text-xl font-semibold text-foreground`}
   }
   .description {
-    ${tw`mt-3 text-base text-accents_5`}
+    ${tw`mt-3 text-base text-accents_6`}
   }
   .author {
     ${tw`mt-6 flex items-center`}

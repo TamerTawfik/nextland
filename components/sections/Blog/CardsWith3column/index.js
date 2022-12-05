@@ -68,7 +68,7 @@ export default function CardsWith3column() {
       </div>
       <div tw="relative max-w-7xl mx-auto">
         <Header>
-          <h2>Learn</h2>
+          <h2>Learn more</h2>
           <h3>Helpful Resources</h3>
           <p>
             Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.

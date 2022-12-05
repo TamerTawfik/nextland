@@ -1,42 +1,12 @@
 //twin-macro
 import tw, { styled } from "twin.macro";
-
-const BackgroundContainer = tw.section`bg-background overflow-hidden`;
-const Container = styled.div`
-  ${tw`relative max-w-7xl mx-auto pt-20 pb-12 px-4 sm:px-6 lg:px-8 lg:py-20`}
-  .pattern1 {
-    ${tw`absolute top-full left-0 transform translate-x-80 -translate-y-24 lg:hidden`}
-  }
-  .pattern2 {
-    ${tw`hidden lg:block absolute right-full top-1/2 transform translate-x-1/2 -translate-y-1/2`}
-  }
-`;
-
-const Testimonial = styled.div`
-  ${tw`relative lg:flex lg:items-center`}
-  .imageWrap {
-    ${tw`hidden lg:block lg:flex-shrink-0`}
-    img {${tw`h-64 w-64 rounded-full xl:h-80 xl:w-80`}}
-  }
-  .blockquoteSvg {
-    ${tw`absolute top-0 left-0 transform -translate-x-8 -translate-y-24 h-36 w-36 text-successDark opacity-50`}
-  }
-  .text {
-    ${tw`text-2xl leading-9 font-medium text-foreground`}
-  }
-  .name {
-    ${tw`text-base font-medium text-foreground`}
-  }
-  .company {
-    ${tw`text-base font-medium text-success`}
-  }
-`;
+import { BackgroundContainer, Container, Testimonial } from "./withLargeAvatar.style";
 
 export default function WithLargeAvatar() {
   return (
     <BackgroundContainer>
       <Container>
-        <svg
+        {/* <svg
           className="pattern1"
           width={784}
           height={404}
@@ -57,9 +27,9 @@ export default function WithLargeAvatar() {
             </pattern>
           </defs>
           <rect width={784} height={404} fill="url(#e56e3f81-d9c1-4b83-a3ba-0d0ac8c32f32)" />
-        </svg>
+        </svg> */}
 
-        <svg
+        {/* <svg
           className="pattern2"
           width={404}
           height={784}
@@ -76,11 +46,11 @@ export default function WithLargeAvatar() {
               height={20}
               patternUnits="userSpaceOnUse"
             >
-              <rect x={0} y={0} width={4} height={4} tw="text-accents_2" fill="currentColor" />
+              <rect x={0} y={0} width={4} height={4} tw="text-accents_1" fill="currentColor" />
             </pattern>
           </defs>
           <rect width={404} height={784} fill="url(#56409614-3d62-4985-9a10-7ca758a8f4f0)" />
-        </svg>
+        </svg> */}
 
         <Testimonial>
           <div className="imageWrap">

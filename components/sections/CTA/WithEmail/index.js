@@ -1,4 +1,3 @@
-import Link from 'next/link';
 // twin-macro
 import tw from 'twin.macro';
 import { BackgroundContainer, Container, Heading, InputWrap, InputContainer, Input, PrimaryLink, Note } from "./withEmail.style";
@@ -19,11 +18,9 @@ export default function WithEmail({
                 <InputWrap>
                     <InputContainer>
                         <Input id="email" type="text" placeholder="Email Address" />
-                        <Link href={primaryLinkUrl} passHref>
-                            <PrimaryLink>
-                                {primaryLinkText}
-                            </PrimaryLink>
-                        </Link>
+                        <PrimaryLink href={primaryLinkUrl}>
+                            {primaryLinkText}
+                        </PrimaryLink>
                     </InputContainer>
 
                     <Note>

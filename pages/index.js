@@ -9,7 +9,7 @@ import WithLargeAvatar from "../components/sections/Testimonial/WithLargeAvatar"
 import CardsWith3column from "../components/sections/Blog/CardsWith3column";
 import CenteredAccordion from "../components/sections/FAQ/CenteredAccordion";
 import WithEmail from "../components/sections/CTA/WithEmail";
-// import SimpleCenter from "../components/sections/CTA/SimpleCenter";
+import SimpleCenter from "../components/sections/CTA/SimpleCenter";
 // import SplitWithImage from "../components/sections/CTA/SplitWithImage";
 // import LogoCloud from "../components/sections/Logo/simple";
 import MissonWith4Column from "../components/sections/Footer/MissonWith4Column";
@@ -35,11 +35,11 @@ export default function Home() {
         <ThreeTiersWithEmphasized />
         <SimpleInCard />
         <WithLargeAvatar />
+        <SimpleCenter />
         <CardsWith3column />
         <CenteredAccordion />
         <WithEmail />
-        {/* <SimpleCenter />
-        <LogoCloud />
+        {/* <LogoCloud />
         <SplitWithImage /> */}
       </main>
       <footer>

@@ -11,19 +11,22 @@ export default function Simple() {
         </Heading>
         <LogoWrapper>
           <Grid>
-            <div tw="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+            <div className="col">
               <img src="./images/google.svg" alt="Google" />
             </div>
-            <div tw="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+            <div className="col">
               <img src="./images/microsoft.svg" alt="Microsoft" />
             </div>
-            <div tw="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+            <div className="col">
               <img src="./images/paypal.svg" alt="Paypal" />
             </div>
-            <div tw="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
+            <div className="col">
+              <img src="./images/square.svg" alt="Square" />
+            </div>
+            <div className="col">
               <img src="./images/airbnb.svg" alt="Airbnb" />
             </div>
-            <div tw="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
+            <div className="col">
               <img src="./images/shopify.svg" alt="Shopify" />
             </div>
           </Grid>

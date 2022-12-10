@@ -1,47 +1,38 @@
 // twin-macro
 import tw from 'twin.macro';
 import { BackgroundContainer, Container, Grid } from "./GridWithOffseetIcons.style";
-// react-icons
-import {
-  FaCloudUploadAlt,
-  FaCog,
-  FaLock,
-  FaShare,
-  FaServer,
-  FaShieldVirus,
-} from "react-icons/fa";
 
 const features = [
   {
-    name: 'Push to Deploy',
-    description: 'Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi vitae lobortis.',
-    icon: FaCloudUploadAlt,
+    name: 'Natural Language Processing',
+    description: 'Some of these services could give 80% accuracy on extraction tasks involving generic data.',
+    icon: './images/ai-1.png',
   },
   {
-    name: 'SSL Certificates',
-    description: 'Qui aut temporibus nesciunt vitae dicta repellat sit dolores pariatur. Temporibus qui illum aut.',
-    icon: FaLock,
+    name: 'Pattern Recognition',
+    description: ' We engage in a machine learning solution tailored to bring product features to life.',
+    icon: './images/ai-2.png',
   },
   {
-    name: 'Simple Queues',
-    description: 'Rerum quas incidunt deleniti quaerat suscipit mollitia. Amet repellendus ut odit dolores qui vitae lobortis.',
-    icon: FaShare,
+    name: 'Computer Vision',
+    description: 'Deep learning techniques have given a fillip to computer vision and image processing solutions.',
+    icon: './images/ai-3.png',
   },
   {
-    name: 'Advanced Security',
-    description: 'Ullam laboriosam est voluptatem maxime ut mollitia commodi. Et dignissimos suscipit perspiciatis.',
-    icon: FaShieldVirus,
+    name: 'Machine Learning',
+    description: 'Building a solution involving machine learning is much more than the model.',
+    icon: './images/ai-4.png',
   },
   {
-    name: 'Powerful API',
+    name: 'Image Processing',
     description:
-      'Ab a facere voluptatem in quia corrupti veritatis aliquam. Veritatis labore quaerat ipsum quaerat id.',
-    icon: FaCog,
+      'We find innovative ways to transform a problem into a generic computational problem.',
+    icon: './images/ai-5.png',
   },
   {
-    name: 'Database Backups',
-    description: 'Quia qui et est officia cupiditate qui consectetur. Ratione similique et impedit ea ipsum et.',
-    icon: FaServer,
+    name: 'Mathematical Optimization',
+    description: 'We strive to use these fundamental algorithms to deliver solutions to problems.',
+    icon: './images/ai-6.png',
   },
 ]
 
@@ -50,13 +41,12 @@ export default function GridWithOffseetIcons() {
   return (
     <BackgroundContainer>
       <Container>
-        <h2>Deploy faster</h2>
+        <h2>Capabilities</h2>
         <p className="heading">
-          Everything you need to deploy your app
+          What We Have Done
         </p>
         <p className="SubHeading">
-          Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper
-          malesuada. Eleifend condimentum id viverra nulla.
+          An AI development team comprises of domain experts, data scientists, data engineers, product designers, data modelling experts.
         </p>
         <div tw="mt-12">
           <Grid>
@@ -66,7 +56,7 @@ export default function GridWithOffseetIcons() {
                   <div className="-mt-6">
                     <div>
                       <span>
-                        <feature.icon tw="h-6 w-6 text-alert" aria-hidden="true" />
+                        <img src={feature.icon} tw="h-6 w-6 text-alert" aria-hidden="true" />
                       </span>
                     </div>
                     <h3>{feature.name}</h3>

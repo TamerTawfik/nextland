@@ -3,7 +3,7 @@ import SimpleCentered from "../components/sections/Hero/SimpleCentered";
 import Simple from "../components/sections/Logo/Simple";
 import GridWithOffseetIcons from '../components/sections/Feature/GridWithOffseetIcons';
 import AlternativeSidesWithImage from '../components/sections/Feature/AlternativeSidesWithImage';
-// import ThreeTiersWithEmphasized from "../components/sections/Pricing/ThreeTiersWithEmphasized";
+import ThreeTiersWithEmphasized from "../components/sections/Pricing/ThreeTiersWithEmphasized";
 // import SimpleInCard from '../components/sections/Stat/SimpleInCard';
 // import WithLargeAvatar from "../components/sections/Testimonial/WithLargeAvatar";
 // import CardsWith3column from "../components/sections/Blog/CardsWith3column";
@@ -30,8 +30,8 @@ export default function Home() {
         {/* Feature Section */}
         <GridWithOffseetIcons />
         <AlternativeSidesWithImage />
-        {/* <ThreeTiersWithEmphasized />
-        <SimpleInCard />
+        <ThreeTiersWithEmphasized />
+        {/* <SimpleInCard />
         <WithLargeAvatar />
         <SimpleCenter />
         <CardsWith3column />

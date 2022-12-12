@@ -1,41 +1,31 @@
 //twin-macro
 import tw from "twin.macro";
-import { BackgroundContainer, HeaderWrap, Header, StatsWrap, Stat1, Stat2, Stat3, Stats } from "./simpleInCard.style";
+import { BackgroundContainer, StatsWrap, Stat1, Stat2, Stat3, Stats } from "./simpleInCard.style";
 
 export default function SimpleInCard() {
   return (
     <BackgroundContainer>
-      {/* <HeaderWrap>
-        <Header>
-          <h2>
-            Trusted by developers from over 80 planets
-          </h2>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus repellat laudantium.
-          </p>
-        </Header>
-      </HeaderWrap> */}
       <StatsWrap>
         <div tw="relative">
           <div className="bg" />
           <div className="cardContianer">
-            <div tw="max-w-4xl mx-auto">
+            <div tw="max-w-7xl mx-auto">
               <Stats>
                 <Stat1>
-                  <dt className="label">Pepperoni</dt>
-                  <dd className="value">100%</dd>
+                  <dt className="label">Complete Project</dt>
+                  <dd className="value">150k</dd>
                 </Stat1>
                 <Stat2>
-                  <dt className="label">Delivery</dt>
-                  <dd className="value">24/7</dd>
+                  <dt className="label">AI Experts</dt>
+                  <dd className="value">400+</dd>
                 </Stat2>
                 <Stat2>
-                  <dt className="label">Customer</dt>
-                  <dd className="value">50+</dd>
+                  <dt className="label">Satisfied Clients</dt>
+                  <dd className="value">3500+</dd>
                 </Stat2>
                 <Stat3>
-                  <dt className="label">Calories</dt>
-                  <dd className="value">100k</dd>
+                  <dt className="label">Industries Served</dt>
+                  <dd className="value">50+</dd>
                 </Stat3>
               </Stats>
             </div>

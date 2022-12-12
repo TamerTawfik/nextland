@@ -1,6 +1,6 @@
 import tw, { styled } from "twin.macro";
 
-export const NavContainer = tw.div`px-6 pt-6 lg:px-8`;
+export const NavContainer = tw.div`px-6 pt-6 lg:px-8 max-w-7xl mx-auto`;
 
 export const Logo = styled.div`
     ${tw`flex lg:min-w-0 lg:flex-auto`}

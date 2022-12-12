@@ -6,56 +6,10 @@ export default function WithLargeAvatar() {
   return (
     <BackgroundContainer>
       <Container>
-        {/* <svg
-          className="pattern1"
-          width={784}
-          height={404}
-          fill="none"
-          viewBox="0 0 784 404"
-          aria-hidden="true"
-        >
-          <defs>
-            <pattern
-              id="e56e3f81-d9c1-4b83-a3ba-0d0ac8c32f32"
-              x={0}
-              y={0}
-              width={20}
-              height={20}
-              patternUnits="userSpaceOnUse"
-            >
-              <rect x={0} y={0} width={4} height={4} tw="text-accents_2" fill="currentColor" />
-            </pattern>
-          </defs>
-          <rect width={784} height={404} fill="url(#e56e3f81-d9c1-4b83-a3ba-0d0ac8c32f32)" />
-        </svg> */}
-
-        {/* <svg
-          className="pattern2"
-          width={404}
-          height={784}
-          fill="none"
-          viewBox="0 0 404 784"
-          aria-hidden="true"
-        >
-          <defs>
-            <pattern
-              id="56409614-3d62-4985-9a10-7ca758a8f4f0"
-              x={0}
-              y={0}
-              width={20}
-              height={20}
-              patternUnits="userSpaceOnUse"
-            >
-              <rect x={0} y={0} width={4} height={4} tw="text-accents_1" fill="currentColor" />
-            </pattern>
-          </defs>
-          <rect width={404} height={784} fill="url(#56409614-3d62-4985-9a10-7ca758a8f4f0)" />
-        </svg> */}
-
         <Testimonial>
           <div className="imageWrap">
             <img
-              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+              src="./images/microsoft.svg"
               alt=""
             />
           </div>
@@ -76,8 +30,7 @@ export default function WithLargeAvatar() {
             <blockquote tw="relative">
               <div className="text">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias
-                  molestiae. Numquam corrupti in laborum sed rerum et corporis.
+                  I just wanted to share a quick note and let you know that you guys do a really good job. I’m glad I decided to work with you. I never have any problem at all.
                 </p>
               </div>
               <footer tw="mt-8">
@@ -85,13 +38,13 @@ export default function WithLargeAvatar() {
                   <div tw="flex-shrink-0 lg:hidden">
                     <img
                       tw="h-12 w-12 rounded-full"
-                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                      src="./images/microsoft.svg"
                       alt=""
                     />
                   </div>
                   <div tw="ml-4 lg:ml-0">
-                    <div className="name">Judith Black</div>
-                    <div className="company">CEO, Tuple</div>
+                    <div className="name">John Smith</div>
+                    <div className="company">CEO, Microsoft</div>
                   </div>
                 </div>
               </footer>

@@ -5,7 +5,7 @@ import GridWithOffseetIcons from '../components/sections/Feature/GridWithOffseet
 import AlternativeSidesWithImage from '../components/sections/Feature/AlternativeSidesWithImage';
 import ThreeTiersWithEmphasized from "../components/sections/Pricing/ThreeTiersWithEmphasized";
 import SimpleInCard from '../components/sections/Stat/SimpleInCard';
-// import WithLargeAvatar from "../components/sections/Testimonial/WithLargeAvatar";
+import WithLargeAvatar from "../components/sections/Testimonial/WithLargeAvatar";
 // import CardsWith3column from "../components/sections/Blog/CardsWith3column";
 // import CenteredAccordion from "../components/sections/FAQ/CenteredAccordion";
 // import WithEmail from "../components/sections/CTA/WithEmail";
@@ -32,8 +32,8 @@ export default function Home() {
         <AlternativeSidesWithImage />
         <ThreeTiersWithEmphasized />
         <SimpleInCard />
-        {/* <WithLargeAvatar />
-        <SimpleCenter />
+        <WithLargeAvatar />
+        {/* <SimpleCenter />
         <CardsWith3column />
         <CenteredAccordion />
         <WithEmail /> */}

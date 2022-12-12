@@ -1,16 +1,8 @@
 //twin-macro
 import tw, { styled } from "twin.macro";
 
-export const BackgroundContainer = tw.section`bg-background overflow-hidden mt-16`;
-export const Container = styled.div`
-  ${tw`relative max-w-7xl mx-auto pt-20 pb-12 px-4 sm:px-6 lg:px-8 lg:py-20`}
-  .pattern1 {
-    ${tw`absolute top-full left-0 transform translate-x-80 -translate-y-24 lg:hidden`}
-  }
-  .pattern2 {
-    ${tw`hidden lg:block absolute right-full top-1/2 transform translate-x-1/2 -translate-y-1/2`}
-  }
-`;
+export const BackgroundContainer = tw.section`bg-background overflow-hidden mt-6`;
+export const Container = tw.div`relative max-w-7xl mx-auto pt-20 pb-12 px-4 sm:px-6 lg:px-8 lg:py-20`;
 
 export const Testimonial = styled.div`
   ${tw`relative lg:flex lg:items-center`}
@@ -25,9 +17,9 @@ export const Testimonial = styled.div`
     ${tw`text-2xl leading-9 font-medium text-secondary`}
   }
   .name {
-    ${tw`text-base font-medium text-foreground`}
+    ${tw`text-base font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#09662b] to-green`}
   }
   .company {
-    ${tw`text-base font-medium text-[#0cce6b]`}
+    ${tw`text-base font-medium text-foreground`}
   }
 `;

@@ -5,7 +5,7 @@ import { BackgroundContainer, Container, Grid } from "./GridWithOffseetIcons.sty
 const features = [
   {
     name: 'Natural Language Processing',
-    description: 'Some of these services could give 80% accuracy on extraction tasks involving generic data.',
+    description: 'services could give 80% accuracy on extraction tasks involving generic data.',
     icon: './images/ai-1.png',
   },
   {
@@ -15,7 +15,7 @@ const features = [
   },
   {
     name: 'Computer Vision',
-    description: 'Deep learning techniques have given a fillip to computer vision and image processing solutions.',
+    description: 'Deep learning techniques have given a fillip to computer vision processing solutions.',
     icon: './images/ai-3.png',
   },
   {
@@ -26,7 +26,7 @@ const features = [
   {
     name: 'Image Processing',
     description:
-      'We find innovative ways to transform a problem into a generic computational problem.',
+      'Innovative ways to transform a problem into a generic computational problem.',
     icon: './images/ai-5.png',
   },
   {
@@ -56,7 +56,7 @@ export default function GridWithOffseetIcons() {
                   <div className="-mt-6">
                     <div>
                       <span>
-                        <img src={feature.icon} tw="h-6 w-6 text-alert" aria-hidden="true" />
+                        <img src={feature.icon} tw="h-8 w-8 text-alert" aria-hidden="true" />
                       </span>
                     </div>
                     <h3>{feature.name}</h3>

@@ -7,7 +7,7 @@ export default function Simple() {
     <BackgroundContainer>
       <Container>
         <Heading>
-          Trusted by the best teams at
+          TRUSTED BY LEADING ORGANIZATIONS
         </Heading>
         <LogoWrapper>
           <Grid>

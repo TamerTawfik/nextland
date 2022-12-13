@@ -8,7 +8,7 @@ export const Testimonial = styled.div`
   ${tw`relative lg:flex lg:items-center`}
   .imageWrap {
     ${tw`hidden lg:block lg:flex-shrink-0`}
-    img {${tw`h-64 w-64 rounded-full xl:h-80 xl:w-80`}}
+    img {${tw`h-32 w-32 rounded-full xl:h-60 xl:w-60`}}
   }
   .blockquoteSvg {
     ${tw`absolute top-0 left-0 transform -translate-x-8 -translate-y-24 h-36 w-36 text-[#09662b] opacity-50`}

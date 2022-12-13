@@ -38,16 +38,16 @@ export const Card = styled.div`${tw`h-full flex flex-col rounded-lg shadow-lg ov
     ${tw`flex-1 flex flex-col justify-between  p-6 bg-accents_1 sm:p-10 lg:p-6 xl:p-10`}
   }
   .plan {
-    ${tw`text-center text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-tr from-foreground to-accents_6`}
+    ${tw`text-center text-xl font-medium bg-clip-text text-transparent bg-gradient-to-tr from-foreground to-accents_6`}
   }
   .priceWrap {
     ${tw`mt-4 flex items-center justify-center`}
   }
   .price {
-    ${tw`px-3 flex items-start text-6xl tracking-tight text-green`}
+    ${tw`px-3 flex items-start text-4xl tracking-tight text-green`}
   }
   .currency {
-    ${tw`mt-2 mr-2 text-4xl font-medium`}
+    ${tw`mt-2 mr-2 text-2xl font-medium`}
   }
   .duration {
     ${tw`text-xl font-medium text-accents_6`}
@@ -79,16 +79,16 @@ export const CardPopular = styled.div`${tw`relative z-10 rounded-lg shadow-xl`}
     ${tw`bg-accents_1 rounded-t-lg px-6 pt-12 pb-10`}
   }
   h3 {
-    ${tw`text-center text-3xl font-semibold bg-clip-text text-transparent bg-gradient-to-tr from-foreground to-accents_6 sm:-mx-6`}
+    ${tw`text-center text-2xl font-semibold bg-clip-text text-transparent bg-gradient-to-tr from-foreground to-accents_6 sm:-mx-6`}
   }
   .priceWrap { 
     ${tw`mt-4 flex items-center justify-center`}
   }
   .priceContainer {
-    ${tw`px-3 flex items-start text-6xl tracking-tight text-green sm:text-6xl`}
+    ${tw`px-3 flex items-start text-4xl tracking-tight text-green sm:text-5xl`}
   }
   .currency {
-    ${tw`mt-2 mr-2 text-4xl font-medium`}
+    ${tw`mt-2 mr-2 text-3xl font-medium`}
   }
   .duration {
     ${tw`text-2xl font-medium text-accents_6`}

@@ -19,7 +19,7 @@ export const Stats = styled.dl`
     ${tw`order-2 mt-2 text-lg leading-6 font-medium text-secondary`}
   }
   .value {
-    ${tw`order-1 text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-[#09662b]  to-green`}
+    ${tw`order-1 text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-[#09662b]  to-green`}
   }
 `;
 

@@ -1,7 +1,7 @@
 // twin-macro
 import tw, { styled } from "twin.macro";
 
-export const Container = tw.div`bg-background max-w-7xl mx-auto pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8`;
+export const Container = tw.div`bg-background max-w-7xl mx-auto pt-3 pb-20 px-4 sm:px-6 lg:pt-12 lg:pb-12 lg:px-8`;
 
 export const Header = styled.div`
   ${tw`text-center`}

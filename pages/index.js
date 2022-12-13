@@ -8,7 +8,7 @@ import SimpleInCard from '../components/sections/Stat/SimpleInCard';
 import WithLargeAvatar from "../components/sections/Testimonial/WithLargeAvatar";
 import SimpleCTA from "../components/sections/CTA/Simple";
 import CardsWith3column from "../components/sections/Blog/CardsWith3column";
-// import CenteredAccordion from "../components/sections/FAQ/CenteredAccordion";
+import CenteredAccordion from "../components/sections/FAQ/CenteredAccordion";
 // import WithEmail from "../components/sections/CTA/WithEmail";
 // import SimpleCenter from "../components/sections/CTA/SimpleCenter";
 // import MissonWith4Column from "../components/sections/Footer/MissonWith4Column";
@@ -36,8 +36,8 @@ export default function Home() {
         <WithLargeAvatar />
         {/* <SimpleCTA /> */}
         <CardsWith3column />
-        {/* <CenteredAccordion />
-        <WithEmail /> */}
+        <CenteredAccordion />
+        {/* <WithEmail /> */}
       </main>
       <footer>
         {/* <MissonWith4Column /> */}

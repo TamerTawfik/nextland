@@ -9,9 +9,10 @@ import WithLargeAvatar from "../components/sections/Testimonial/WithLargeAvatar"
 import SimpleCTA from "../components/sections/CTA/Simple";
 import CardsWith3column from "../components/sections/Blog/CardsWith3column";
 import CenteredAccordion from "../components/sections/FAQ/CenteredAccordion";
+import SplitTwo from "../components/sections/Contact/SplitTwo";
 // import WithEmail from "../components/sections/CTA/WithEmail";
 // import SimpleCenter from "../components/sections/CTA/SimpleCenter";
-// import MissonWith4Column from "../components/sections/Footer/MissonWith4Column";
+import MissonWith4Column from "../components/sections/Footer/MissonWith4Column";
 
 
 export default function Home() {
@@ -37,11 +38,10 @@ export default function Home() {
         {/* <SimpleCTA /> */}
         <CardsWith3column />
         <CenteredAccordion />
+        <SplitTwo />
         {/* <WithEmail /> */}
       </main>
-      <footer>
-        {/* <MissonWith4Column /> */}
-      </footer>
+      <MissonWith4Column />
     </>
   )
 }

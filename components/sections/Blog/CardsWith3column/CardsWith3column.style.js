@@ -11,9 +11,6 @@ export const Header = styled.div`
   h3 {
     ${tw`mt-3 h-16 text-3xl font-black bg-clip-text text-transparent bg-gradient-to-tr from-foreground to-accents_6 tracking-tight sm:text-4xl`}
   }
-  p {
-    ${tw`max-w-prose mx-auto text-xl text-secondary leading-8`}
-  }
 `;
 
 export const BlogCard = styled.div`

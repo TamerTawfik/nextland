@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useState } from 'react'
+import { useEffect, useState } from 'react';
 import tw from "twin.macro";
 import { Dialog } from '@headlessui/react'
 import { HiBars2, HiOutlineXMark } from "react-icons/hi2";
@@ -7,13 +7,39 @@ import { NavContainer, Logo, Nav, DialogButton, NavLinks, NavButton, MobileNav }
 import LogoSVG from "../../LogoSVG";
 import navigation from "./centeredNavbar.data";
 
+function classNames(...classes) {
+    return classes.filter(Boolean).join(' ');
+}
 
+const useScrollPosition = () => {
+    const [scrollPosition, setScrollPosition] = useState(0);
+
+    useEffect(() => {
+        const updatePosition = () => {
+            setScrollPosition(window.pageYOffset);
+        };
+
+        window.addEventListener('scroll', updatePosition);
+
+        updatePosition();
+
+        return () => window.removeEventListener('scroll', updatePosition);
+    }, []);
+
+    return scrollPosition;
+};
 
 export default function SimpleCentered() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const scrollPosition = useScrollPosition();
 
     return (
-        <NavContainer>
+        <NavContainer
+            className={classNames(
+                scrollPosition > 70 ? 'border-b border-accents_2' : '',
+                'transition-border'
+            )}
+        >
             <Nav aria-label="Global">
                 <Logo aria-label="Global">
                     <Link href="/">
@@ -48,7 +74,7 @@ export default function SimpleCentered() {
                 </NavButton>
             </Nav>
             <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-                <Dialog.Panel focus="true" tw="fixed inset-0 z-10 overflow-y-auto bg-background px-6 py-6 lg:hidden">
+                <Dialog.Panel focus="true" tw="fixed inset-0 z-30 overflow-y-auto bg-background px-6 py-6 lg:hidden">
                     <div tw="flex h-9 items-center justify-between">
                         <div tw="flex">
                             <Link href="#" tw="-m-1.5 p-1.5">

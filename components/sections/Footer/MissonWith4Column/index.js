@@ -1,5 +1,6 @@
 import tw from "twin.macro";
 import { Container, Grid, MissonSide, LinksSide, CopyRights } from "./MissonWith4Column.style";
+import LogoSVG from "../../../common/LogoSVG";
 
 const navigation = {
   solutions: [
@@ -101,13 +102,9 @@ export default function MissonWith4Column() {
       <Container>
         <Grid>
           <MissonSide>
-            <img
-              tw="h-10"
-              src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg"
-              alt="Company name"
-            />
+            <LogoSVG width={'32'} height={'32'} />
             <p>
-              Making the world a better place through constructing elegant hierarchies.
+              Democratize implement AI & machine learning solutions for startups.
             </p>
             <div tw="flex space-x-6">
               {navigation.social.map((item) => (
@@ -174,7 +171,7 @@ export default function MissonWith4Column() {
           </LinksSide>
         </Grid>
         <CopyRights>
-          <p>&copy; 2020 Workflow, Inc. All rights reserved.</p>
+          <p>&copy; 2023 Nextland, Inc. All rights reserved.</p>
         </CopyRights>
       </Container>
     </footer>

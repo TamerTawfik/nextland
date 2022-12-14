@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import tw from "twin.macro";
-import Navbar from "../../../common/Navbar/CenteredNavbar";
+// import Navbar from "../../../common/Navbar/CenteredNavbar";
 import { Container, HeroContainer } from "./simpleCentered.style";
 
 
@@ -9,7 +9,7 @@ export default function SimpleCentered() {
 
     return (
         <Container>
-            <Navbar />
+            {/* <Navbar /> */}
             <div tw="relative px-6 lg:px-8">
                 <HeroContainer className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-900 via-black to-black">
                     <div>

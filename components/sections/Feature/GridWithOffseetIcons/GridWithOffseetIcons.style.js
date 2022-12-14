@@ -3,7 +3,7 @@ import tw, { styled } from 'twin.macro';
 
 export const BackgroundContainer = tw.div`relative bg-background pb-8 md:pb-24 lg:pb-16`;
 export const Container = styled.div`
-  ${tw`mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl`}
+  ${tw`mx-auto max-w-md px-4 text-center sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-full`}
   h2 {
     ${tw`h-10 text-xl  tracking-wider  uppercase font-bold bg-clip-text text-transparent bg-gradient-to-r from-violet via-alert to-alert `}
   }

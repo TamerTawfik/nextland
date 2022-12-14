@@ -2,7 +2,7 @@
 import tw, { styled } from "twin.macro";
 
 export const BackgroundContainer = tw.div`py-16 bg-background overflow-hidden lg:py-24`;
-export const Container = tw.div`relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-7xl`;
+export const Container = tw.div`relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-full`;
 export const Heading = tw.h2`text-center text-3xl leading-8 font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-tr from-foreground to-accents_6 sm:text-4xl`;
 export const HeadingText = tw.p`mt-4 max-w-3xl mx-auto text-center text-lg text-accents_5`;
 export const FirstContent = styled.div`

@@ -1,19 +1,14 @@
 import tw, { styled } from "twin.macro";
 
-export const NavContainer = tw.div`px-6 pt-6 lg:px-8 max-w-7xl mx-auto`;
+export const NavContainer = tw.div`sticky top-0 z-20 bg-background px-6 py-4 lg:px-8  mx-auto`;
 
 export const Logo = styled.div`
-    ${tw`flex lg:min-w-0 lg:flex-auto`}
+    ${tw`flex lg:min-w-0 lg:flex-auto mt-2`}
     a {${tw`-m-1.5 p-1.5`}}
 `;
 
 export const Nav = styled.div`
-    ${tw`flex h-9 items-center justify-between bg-transparent`}
-    
-    button {
-        ${tw`-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-foreground`}
-    }
-    
+    ${tw`flex h-9 items-center justify-between bg-transparent`}    
 `;
 
 export const DialogButton = tw.div`flex lg:hidden`;

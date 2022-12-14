@@ -1,7 +1,7 @@
 // twin-macro
 import tw, { styled } from "twin.macro";
 
-export const Container = tw.div`bg-background max-w-7xl mx-auto pt-3 pb-20 px-4 sm:px-6 lg:pt-12 lg:pb-12 lg:px-8`;
+export const Container = tw.div`bg-background max-w-full mx-auto pt-3 pb-20 px-4 sm:px-6 lg:pt-12 lg:pb-12 lg:px-8`;
 
 export const Header = styled.div`
   ${tw`text-center`}
@@ -14,7 +14,7 @@ export const Header = styled.div`
 `;
 
 export const BlogCard = styled.div`
-  ${tw`mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none`}
+  ${tw`mt-12 max-w-lg mx-auto grid gap-10 lg:grid-cols-3 lg:max-w-none`}
   .card {
     ${tw`flex flex-col rounded-lg shadow-lg overflow-hidden`}
   }

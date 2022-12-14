@@ -12,6 +12,7 @@ import CenteredAccordion from "../components/sections/FAQ/CenteredAccordion";
 import SplitTwo from "../components/sections/Contact/SplitTwo";
 import WithEmail from "../components/sections/CTA/WithEmail";
 import MissonWith4Column from "../components/sections/Footer/MissonWith4Column";
+import Navbar from "../components/common/Navbar/CenteredNavbar";
 
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-background">
+        <Navbar />
         {/* Hero section with Navigation */}
         <SimpleCentered />
         <Simple />

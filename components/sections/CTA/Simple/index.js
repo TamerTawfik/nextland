@@ -3,7 +3,7 @@ import Link from 'next/link';
 import tw from 'twin.macro';
 
 const PrimaryBackgroundContainer = tw.div`bg-background pb-12`;
-const Container = tw.div`max-w-4xl mx-auto py-6 px-4 sm:px-6 lg:py-8 lg:px-8 lg:flex lg:items-center lg:justify-between bg-gradient-to-r from-background to-background rounded-lg border border-green rounded-3xl`;
+const Container = tw.div`max-w-4xl mx-auto py-8 px-4 sm:px-6 lg:py-12 lg:px-8 lg:flex lg:items-center lg:justify-between bg-gradient-to-r from-background to-background rounded-lg border border-green rounded-3xl`;
 const Heading = tw.h2`text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl`;
 const SubHeadingOne = tw.span`block`;
 const SubHeadingTwo = tw.span`block bg-clip-text text-transparent bg-gradient-to-tr from-foreground to-accents_6`;

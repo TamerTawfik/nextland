@@ -16,22 +16,21 @@ export default function SplitTwo() {
           <div tw="max-w-lg mx-auto">
             <h2>Get in touch</h2>
             <p className="text">
-              Nullam risus blandit ac aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien tortor lacus
-              arcu.
+              Need to get in touch with us? Either fill out the form with your inquiry or find the phone, email you'd like to contact below.
             </p>
-            <dl tw="mt-8 text-base text-secondary">
+            <dl tw="mt-8 text-sm text-foreground">
               <div>
                 <dt className="sr-only">Postal address</dt>
                 <dd>
-                  <p>742 Evergreen Terrace</p>
-                  <p>Springfield, OR 12345</p>
+                  <p>221B Baker Street</p>
+                  <p>London, England</p>
                 </dd>
               </div>
               <div tw="mt-6">
                 <dt className="sr-only">Phone number</dt>
                 <dd className="flex">
                   <HiOutlinePhone className="icon" aria-hidden="true" />
-                  <span tw="ml-3">+1 (555) 123-4567</span>
+                  <span tw="ml-3">+2 (333) 123-4567</span>
                 </dd>
               </div>
               <div tw="mt-3">
@@ -45,9 +44,8 @@ export default function SplitTwo() {
             <p className="careers">
               Looking for careers?{' '}
               <a href="#" className="link">
-                View all job openings
+                View all job openings.
               </a>
-              .
             </p>
           </div>
         </Column1>

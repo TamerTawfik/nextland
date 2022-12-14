@@ -15,7 +15,7 @@ export const Header = styled.div`
   }
 `;
 export const Container = tw.div`mt-16 bg-background pb-12 lg:mt-20 lg:pb-20`;
-export const PlansWrap = tw.div`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8`;
+export const PlansWrap = tw.div`max-w-6xl mx-auto px-4 sm:px-6 lg:px-8`;
 export const Grid = styled.div`${tw`relative lg:grid lg:grid-cols-7`}
   .column-1 {
     ${tw`mx-auto max-w-md lg:mx-0 lg:max-w-none lg:col-start-1 lg:col-end-3 lg:row-start-2 lg:row-end-3`}

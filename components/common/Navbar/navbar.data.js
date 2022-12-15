@@ -1,6 +1,6 @@
 
 export default [
-    { name: 'Home', href: '/' },
+    { name: 'Solutions', href: '#solutions' },
     { name: 'Features', href: '#features' },
     { name: 'Pricing', href: '#pricing' },
     { name: 'Blog', href: '#blog' },

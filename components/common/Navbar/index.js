@@ -1,16 +1,19 @@
-import Link from "next/link";
 import { useEffect, useState } from 'react';
+import Link from "next/link";
 import tw from "twin.macro";
 import { Dialog } from '@headlessui/react'
 import { HiBars2, HiOutlineXMark } from "react-icons/hi2";
-import { NavContainer, Logo, Nav, DialogButton, NavLinks, NavButton, MobileNav } from "./CenteredNavbar.style";
-import LogoSVG from "../../LogoSVG";
-import navigation from "./centeredNavbar.data";
 
+import LogoSVG from "../LogoSVG";
+import navigation from "./navbar.data";
+import { NavContainer, Logo, Nav, DialogButton, NavLinks, NavButton, MobileNav } from "./navbar.style";
+
+// Add classes based on Boolean for the Navbar
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ');
 }
 
+// Add event listener to window to detect scrolling position
 const useScrollPosition = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -30,13 +33,15 @@ const useScrollPosition = () => {
 };
 
 export default function SimpleCentered() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    // Toggle Mobile Menu
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    // Call scroll detection posotion
     const scrollPosition = useScrollPosition();
 
     return (
         <NavContainer
             className={classNames(
-                scrollPosition > 70 ? 'shadow shadow-accents_2 ' : '',
+                scrollPosition > 70 ? 'shadow-sm shadow-accents_2' : '',
                 'transition-shadow'
             )}
         >
@@ -48,6 +53,7 @@ export default function SimpleCentered() {
                         <span className="ml-1 text-foreground text-2xl">Nextland</span>
                     </Link>
                 </Logo>
+                {/* Mobile Menu Toggle Button */}
                 <DialogButton>
                     <button
                         type="button"
@@ -73,11 +79,12 @@ export default function SimpleCentered() {
                     </Link>
                 </NavButton>
             </Nav>
+            {/* Mobile Menu */}
             <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
                 <Dialog.Panel focus="true" tw="fixed inset-0 z-30 overflow-y-auto bg-background px-6 py-6 lg:hidden">
                     <div tw="flex h-9 items-center justify-between">
                         <div tw="flex">
-                            <Link href="#" tw="-m-1.5 p-1.5">
+                            <Link href="#" tw="-m-1.5 p-1.5" onClick={() => setMobileMenuOpen(false)}>
                                 <span className="sr-only">Nextland</span>
                                 <LogoSVG />
                                 <span className="ml-1 text-foreground text-2xl">Nextland</span>
@@ -100,8 +107,10 @@ export default function SimpleCentered() {
                             <div tw="space-y-2 py-6">
                                 {navigation.map((item) => (
                                     <Link
+                                        onClick={() => setMobileMenuOpen(false)}
                                         key={item.name}
                                         href={item.href}
+                                        scroll={false}
                                     >
                                         {item.name}
                                     </Link>
@@ -109,9 +118,9 @@ export default function SimpleCentered() {
                             </div>
                             <div tw="py-6">
                                 <span className="">
-                                    <Link href="#">Login</Link>
+                                    <Link href="#" onClick={() => setMobileMenuOpen(false)}>Login</Link>
                                 </span>
-                                <Link href="#">
+                                <Link href="#" onClick={() => setMobileMenuOpen(false)}>
                                     Sign Up
                                 </Link>
                             </div>
@@ -120,6 +129,5 @@ export default function SimpleCentered() {
                 </Dialog.Panel>
             </Dialog>
         </NavContainer>
-
     )
-}
+};

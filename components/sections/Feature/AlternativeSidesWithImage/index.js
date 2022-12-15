@@ -47,7 +47,7 @@ const secondFeatures = [
 
 export default function AlternativeSidesWithImage() {
   return (
-    <BackgroundContainer>
+    <BackgroundContainer id="features">
       <Container>
         {/* the Heading Wrap */}
         <div tw="relative">

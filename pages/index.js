@@ -12,7 +12,7 @@ import CenteredAccordion from "../components/sections/FAQ/CenteredAccordion";
 import SplitTwo from "../components/sections/Contact/SplitTwo";
 import WithEmail from "../components/sections/CTA/WithEmail";
 import MissonWith4Column from "../components/sections/Footer/MissonWith4Column";
-import Navbar from "../components/common/Navbar/CenteredNavbar";
+import Navbar from "../components/common/Navbar";
 
 
 export default function Home() {

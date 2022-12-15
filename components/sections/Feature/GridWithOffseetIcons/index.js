@@ -39,7 +39,7 @@ const features = [
 
 export default function GridWithOffseetIcons() {
   return (
-    <BackgroundContainer id="features">
+    <BackgroundContainer id="solutions">
       <Container>
         <h2>Capabilities</h2>
         <p className="heading">

@@ -1,8 +1,9 @@
 
 export default [
-    { name: 'Product', href: '#' },
-    { name: 'Features', href: '#' },
-    { name: 'Marketplace', href: '#' },
-    { name: 'Company', href: '#' },
-    { name: 'Pricing', href: '#' },
+    { name: 'Home', href: '/' },
+    { name: 'Features', href: '#features' },
+    { name: 'Pricing', href: '#pricing' },
+    { name: 'Blog', href: '#blog' },
+    { name: 'FAQ', href: '#faq' },
+    { name: 'Contact', href: '#contact' },
 ]

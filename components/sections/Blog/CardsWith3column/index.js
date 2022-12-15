@@ -32,7 +32,7 @@ const posts = [
 
 export default function CardsWith3column() {
   return (
-    <Container>
+    <Container id="blog">
       <div >
         <Header>
           <h2>Learn more</h2>

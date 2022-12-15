@@ -42,7 +42,7 @@ function classNames(...classes) {
 
 export default function CenteredAccordion() {
   return (
-    <BackgroundContainer>
+    <BackgroundContainer id="faq">
       <Container>
         <div className="divider">
           <Heading>Frequently asked questions</Heading>

@@ -17,7 +17,7 @@ const professionalFeatures = [
 
 export default function ThreeTiersWithEmphasized() {
   return (
-    <BackgroundContainer>
+    <BackgroundContainer id="pricing">
       <Header>
         <div tw="text-center">
           <h2>Pricing</h2>

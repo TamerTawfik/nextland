@@ -36,8 +36,8 @@ export default function SimpleCentered() {
     return (
         <NavContainer
             className={classNames(
-                scrollPosition > 70 ? 'border-b border-accents_2' : '',
-                'transition-border'
+                scrollPosition > 70 ? 'shadow shadow-accents_2 ' : '',
+                'transition-shadow'
             )}
         >
             <Nav aria-label="Global">
@@ -59,7 +59,7 @@ export default function SimpleCentered() {
                 </DialogButton>
                 <NavLinks>
                     {navigation.map((item) => (
-                        <Link key={item.name} href={item.href}>
+                        <Link key={item.name} href={item.href} scroll={false}>
                             {item.name}
                         </Link>
                     ))}

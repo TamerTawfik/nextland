@@ -7,7 +7,7 @@ import { BackgroundContainer, Grid, Column1, Column2 } from "./splitTwo.style";
 
 export default function SplitTwo() {
   return (
-    <BackgroundContainer>
+    <BackgroundContainer id="contact">
       <div tw="absolute inset-0">
         <div className="absolute inset-y-0 left-0 w-1/2 bg-background" />
       </div>

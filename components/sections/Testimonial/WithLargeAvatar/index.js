@@ -4,7 +4,7 @@ import { BackgroundContainer, Container, Testimonial } from "./withLargeAvatar.s
 
 export default function WithLargeAvatar() {
   return (
-    <BackgroundContainer>
+    <BackgroundContainer id="testimonials">
       <Container>
         <Testimonial>
           <div className="imageWrap">

@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import SimpleCentered from "../components/sections/Hero/SimpleCentered";
+import Navbar from "../components/common/Navbar";
+import HeroSection from "../components/sections/Hero";
 import Simple from "../components/sections/Logo/Simple";
 import GridWithOffseetIcons from '../components/sections/Feature/GridWithOffseetIcons';
 import AlternativeSidesWithImage from '../components/sections/Feature/AlternativeSidesWithImage';
@@ -12,7 +13,6 @@ import CenteredAccordion from "../components/sections/FAQ/CenteredAccordion";
 import SplitTwo from "../components/sections/Contact/SplitTwo";
 import WithEmail from "../components/sections/CTA/WithEmail";
 import MissonWith4Column from "../components/sections/Footer/MissonWith4Column";
-import Navbar from "../components/common/Navbar";
 
 
 export default function Home() {
@@ -25,8 +25,7 @@ export default function Home() {
       </Head>
       <main className="bg-background">
         <Navbar />
-        {/* Hero section with Navigation */}
-        <SimpleCentered />
+        <HeroSection />
         <Simple />
         {/* Stats Section */}
 

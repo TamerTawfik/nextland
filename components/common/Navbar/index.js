@@ -32,7 +32,14 @@ const useScrollPosition = () => {
     return scrollPosition;
 };
 
-export default function SimpleCentered() {
+export default function SimpleCentered({
+    logo = "Nextland",
+    logoUrl = "/",
+    primaryLinkText = "Login",
+    primaryLinkUrl = "#",
+    secondaryLinkText = "Sign Up",
+    secondaryLinkUrl = "#",
+}) {
     // Toggle Mobile Menu
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     // Call scroll detection posotion
@@ -47,10 +54,10 @@ export default function SimpleCentered() {
         >
             <Nav aria-label="Global">
                 <Logo aria-label="Global">
-                    <Link href="/">
-                        <span className="sr-only">Nextland</span>
+                    <Link href={logoUrl}>
+                        <span className="sr-only">{logo}</span>
                         <LogoSVG />
-                        <span className="ml-1 text-foreground text-2xl">Nextland</span>
+                        <span className="ml-1 text-foreground text-2xl">{logo}</span>
                     </Link>
                 </Logo>
                 {/* Mobile Menu Toggle Button */}
@@ -72,10 +79,10 @@ export default function SimpleCentered() {
                 </NavLinks>
                 <NavButton>
                     <span className="login">
-                        <Link href="#">Login</Link>
+                        <Link href={primaryLinkUrl} >{primaryLinkText}</Link>
                     </span>
-                    <Link href="#" className="CTA">
-                        Sign Up
+                    <Link href={secondaryLinkUrl} className="CTA">
+                        {secondaryLinkText}
                     </Link>
                 </NavButton>
             </Nav>
@@ -84,10 +91,10 @@ export default function SimpleCentered() {
                 <Dialog.Panel focus="true" tw="fixed inset-0 z-30 overflow-y-auto bg-background px-6 py-6 lg:hidden">
                     <div tw="flex h-9 items-center justify-between">
                         <div tw="flex">
-                            <Link href="#" tw="-m-1.5 p-1.5" onClick={() => setMobileMenuOpen(false)}>
-                                <span className="sr-only">Nextland</span>
+                            <Link href={logoUrl} tw="-m-1.5 p-1.5" onClick={() => setMobileMenuOpen(false)}>
+                                <span className="sr-only">{logo}</span>
                                 <LogoSVG />
-                                <span className="ml-1 text-foreground text-2xl">Nextland</span>
+                                <span className="ml-1 text-foreground text-2xl">{logo}</span>
 
                             </Link>
                         </div>
@@ -118,10 +125,10 @@ export default function SimpleCentered() {
                             </div>
                             <div tw="py-6">
                                 <span className="">
-                                    <Link href="#" onClick={() => setMobileMenuOpen(false)}>Login</Link>
+                                    <Link href={primaryLinkUrl} onClick={() => setMobileMenuOpen(false)}>{primaryLinkText}</Link>
                                 </span>
-                                <Link href="#" onClick={() => setMobileMenuOpen(false)}>
-                                    Sign Up
+                                <Link href={secondaryLinkUrl} onClick={() => setMobileMenuOpen(false)}>
+                                    {secondaryLinkText}
                                 </Link>
                             </div>
                         </div>

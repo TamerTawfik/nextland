@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Navbar from "../components/common/Navbar";
 import HeroSection from "../components/sections/Hero";
 import LogoSection from "../components/sections/LogoClouds";
-import GridWithOffseetIcons from '../components/sections/Feature/GridWithOffseetIcons';
+import SolutionSection from '../components/sections/Solution';
 import AlternativeSidesWithImage from '../components/sections/Feature/AlternativeSidesWithImage';
 import ThreeTiersWithEmphasized from "../components/sections/Pricing/ThreeTiersWithEmphasized";
 import SimpleInCard from '../components/sections/Stat/SimpleInCard';
@@ -30,7 +30,7 @@ export default function Home() {
         {/* Stats Section */}
 
         {/* Feature Section */}
-        <GridWithOffseetIcons />
+        <SolutionSection />
         <AlternativeSidesWithImage />
         <ThreeTiersWithEmphasized />
         <SimpleInCard />

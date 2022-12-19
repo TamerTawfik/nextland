@@ -1,8 +1,8 @@
 // twin-macro
 import tw from 'twin.macro';
-import { BackgroundContainer, Container, Grid } from "./GridWithOffseetIcons.style";
+import { BackgroundContainer, Container, Grid } from "./solution.style";
 
-const features = [
+const solutions = [
   {
     name: 'Natural Language Processing',
     description: 'services could give 80% accuracy on extraction tasks involving generic data.',
@@ -37,31 +37,35 @@ const features = [
 ]
 
 
-export default function GridWithOffseetIcons() {
+export default function GridWithOffseetIcons({
+  headingOne = "Capabilities",
+  headignTwo = "What We Have Done",
+  subHeading = "An AI development team comprises of domain experts, data scientists, data engineers, product designers, data modelling experts.",
+}) {
   return (
     <BackgroundContainer id="solutions">
       <Container>
-        <h2>Capabilities</h2>
+        <h2>{headingOne}</h2>
         <p className="heading">
-          What We Have Done
+          {headignTwo}
         </p>
         <p className="SubHeading">
-          An AI development team comprises of domain experts, data scientists, data engineers, product designers, data modelling experts.
+          {subHeading}
         </p>
         <div tw="mt-12">
           <Grid>
-            {features.map((feature) => (
-              <div key={feature.name} tw="pt-6">
+            {solutions.map((solution) => (
+              <div key={solution.name} tw="pt-6">
                 <div className="card">
                   <div className="-mt-6">
                     <div>
                       <span>
-                        <img src={feature.icon} tw="h-8 w-8 text-alert" aria-hidden="true" />
+                        <img src={solution.icon} tw="h-8 w-8 text-alert" aria-hidden="true" />
                       </span>
                     </div>
-                    <h3>{feature.name}</h3>
+                    <h3>{solution.name}</h3>
                     <p>
-                      {feature.description}
+                      {solution.description}
                     </p>
                   </div>
                 </div>

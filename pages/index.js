@@ -5,7 +5,7 @@ import LogoSection from "../components/sections/LogoClouds";
 import SolutionSection from '../components/sections/Solution';
 import FeatureSection from '../components/sections/Feature';
 import PricingSection from "../components/sections/Pricing";
-import SimpleInCard from '../components/sections/Stat/SimpleInCard';
+import StatSection from '../components/sections/Stat';
 import WithLargeAvatar from "../components/sections/Testimonial/WithLargeAvatar";
 import SimpleCTA from "../components/sections/CTA/Simple";
 import CardsWith3column from "../components/sections/Blog/CardsWith3column";
@@ -30,7 +30,7 @@ export default function Home() {
         <SolutionSection />
         <FeatureSection />
         <PricingSection />
-        <SimpleInCard />
+        <StatSection />
         <WithLargeAvatar />
         <SimpleCTA />
         <CardsWith3column />

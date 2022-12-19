@@ -7,7 +7,7 @@ import FeatureSection from '../components/sections/Feature';
 import PricingSection from "../components/sections/Pricing";
 import StatSection from '../components/sections/Stat';
 import TestimonialSection from "../components/sections/Testimonial";
-import SimpleCTA from "../components/sections/CTA/Simple";
+import CTASection from "../components/sections/CTA";
 import CardsWith3column from "../components/sections/Blog/CardsWith3column";
 import CenteredAccordion from "../components/sections/FAQ/CenteredAccordion";
 import SplitTwo from "../components/sections/Contact/SplitTwo";
@@ -32,7 +32,7 @@ export default function Home() {
         <PricingSection />
         <StatSection />
         <TestimonialSection />
-        <SimpleCTA />
+        <CTASection />
         <CardsWith3column />
         <CenteredAccordion />
         <SplitTwo />

@@ -2,10 +2,11 @@
 import tw from "twin.macro";
 // react-icons
 import { HiOutlineCheckBadge } from "react-icons/hi2";
-import { BackgroundContainer, Header, Container, PlansWrap, Grid, Card, CardPopular, } from "./threeTiersWithEmphasized.style";
+
+import { BackgroundContainer, Header, Container, PlansWrap, Grid, Card, CardPopular, } from "./pricing.style";
 
 const personalFeatures = ['Only 1 user seat', '5 projects', '7-day free trial of Pro Plan']
-const scaleFeatures = ['All professional plan', 'Unlimited user seats included', '24/7 live support']
+const enterpriseFeatures = ['All professional plan', 'Unlimited user seats included', '24/7 live support']
 const professionalFeatures = [
   '5 user seats included',
   'Unlimited projects',
@@ -15,21 +16,24 @@ const professionalFeatures = [
 ]
 
 
-export default function ThreeTiersWithEmphasized() {
+export default function ThreeTiersWithEmphasized({
+  headingOne = "Pricing",
+  headingTwo = "Get started today",
+  subHeading = "Choose which Plan suits your organization best.",
+}) {
   return (
     <BackgroundContainer id="pricing">
       <Header>
         <div tw="text-center">
-          <h2>Pricing</h2>
+          <h2>{headingOne}</h2>
           <p className="heading">
-            Get started today
+            {headingTwo}
           </p>
           <p className="text">
-            Choose which Plan suits your organization best.
+            {subHeading}
           </p>
         </div>
       </Header>
-
       <Container>
         <div tw="relative z-0">
           <PlansWrap>
@@ -39,7 +43,7 @@ export default function ThreeTiersWithEmphasized() {
                   <div className="cardWrap">
                     <div className="cardHeader">
                       <div>
-                        <h3 className="plan" id="tier-hobby">
+                        <h3 className="plan">
                           Personal
                         </h3>
                         <div className="priceWrap">
@@ -74,7 +78,6 @@ export default function ThreeTiersWithEmphasized() {
                           </li>
                         ))}
                       </ul>
-
                     </div>
                   </div>
                 </Card>
@@ -129,7 +132,6 @@ export default function ThreeTiersWithEmphasized() {
                         </li>
                       ))}
                     </ul>
-
                   </div>
                 </CardPopular>
               </div>
@@ -138,7 +140,7 @@ export default function ThreeTiersWithEmphasized() {
                   <div className="cardWrap">
                     <div className="cardHeader">
                       <div>
-                        <h3 className="plan" id="tier-scale">
+                        <h3 className="plan">
                           Enterprise
                         </h3>
                         <div className="priceWrap">
@@ -164,7 +166,7 @@ export default function ThreeTiersWithEmphasized() {
                     <div className="cardBody">
                       <p className="text-foreground pb-4">What’s included</p>
                       <ul role="list" tw="space-y-4">
-                        {scaleFeatures.map((feature) => (
+                        {enterpriseFeatures.map((feature) => (
                           <li key={feature} tw="flex items-start">
                             <div tw="flex-shrink-0">
                               <HiOutlineCheckBadge className="checkIcon" aria-hidden="true" />
@@ -173,7 +175,6 @@ export default function ThreeTiersWithEmphasized() {
                           </li>
                         ))}
                       </ul>
-
                     </div>
                   </div>
                 </Card>
@@ -184,4 +185,4 @@ export default function ThreeTiersWithEmphasized() {
       </Container >
     </BackgroundContainer>
   )
-}
+};

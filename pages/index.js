@@ -4,7 +4,7 @@ import HeroSection from "../components/sections/Hero";
 import LogoSection from "../components/sections/LogoClouds";
 import SolutionSection from '../components/sections/Solution';
 import FeatureSection from '../components/sections/Feature';
-import ThreeTiersWithEmphasized from "../components/sections/Pricing/ThreeTiersWithEmphasized";
+import PricingSection from "../components/sections/Pricing";
 import SimpleInCard from '../components/sections/Stat/SimpleInCard';
 import WithLargeAvatar from "../components/sections/Testimonial/WithLargeAvatar";
 import SimpleCTA from "../components/sections/CTA/Simple";
@@ -29,7 +29,7 @@ export default function Home() {
         <LogoSection />
         <SolutionSection />
         <FeatureSection />
-        <ThreeTiersWithEmphasized />
+        <PricingSection />
         <SimpleInCard />
         <WithLargeAvatar />
         <SimpleCTA />

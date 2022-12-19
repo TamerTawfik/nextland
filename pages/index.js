@@ -3,7 +3,7 @@ import Navbar from "../components/common/Navbar";
 import HeroSection from "../components/sections/Hero";
 import LogoSection from "../components/sections/LogoClouds";
 import SolutionSection from '../components/sections/Solution';
-import AlternativeSidesWithImage from '../components/sections/Feature/AlternativeSidesWithImage';
+import FeatureSection from '../components/sections/Feature';
 import ThreeTiersWithEmphasized from "../components/sections/Pricing/ThreeTiersWithEmphasized";
 import SimpleInCard from '../components/sections/Stat/SimpleInCard';
 import WithLargeAvatar from "../components/sections/Testimonial/WithLargeAvatar";
@@ -27,11 +27,8 @@ export default function Home() {
         <Navbar />
         <HeroSection />
         <LogoSection />
-        {/* Stats Section */}
-
-        {/* Feature Section */}
         <SolutionSection />
-        <AlternativeSidesWithImage />
+        <FeatureSection />
         <ThreeTiersWithEmphasized />
         <SimpleInCard />
         <WithLargeAvatar />

@@ -1,7 +1,7 @@
 //twin-macro
 import tw, { styled } from "twin.macro";
 
-export const BackgroundContainer = tw.div`bg-background`;
+export const BackgroundContainer = tw.section`bg-background`;
 
 export const Container = tw.div`max-w-7xl mx-auto py-8 px-4 sm:px-6 lg:py-12 lg:px-8`;
 

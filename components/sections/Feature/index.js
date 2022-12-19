@@ -2,7 +2,8 @@
 import tw, { styled } from "twin.macro";
 // react-icons
 import { HiArrowPath, HiOutlinePencilSquare, HiOutlineCpuChip, HiOutlineCursorArrowRipple, HiOutlineFire } from "react-icons/hi2";
-import { BackgroundContainer, Container, Heading, HeadingText, FirstContent, FirstContentList, FirstContentImage, IconWrap, SeccondContentGrid, SeconContetnList, SecondContent, SecondContentImage } from "./alternativeSidesWithImage.style";
+
+import { BackgroundContainer, Container, Heading, SubHeading, FirstContent, FirstContentList, FirstContentImage, IconWrap, SeccondContentGrid, SeconContetnList, SecondContent, SecondContentImage } from "./feature.style";
 
 const firstFeatures = [
   {
@@ -45,20 +46,23 @@ const secondFeatures = [
 ]
 
 
-export default function AlternativeSidesWithImage() {
+export default function AlternativeSidesWithImage({
+  heading = "Democratize AI",
+  subHeading = "Our comprehensive automated machine learning (autoML) capabilities transform how AI is created and consumed.",
+}) {
   return (
     <BackgroundContainer id="features">
       <Container>
         {/* the Heading Wrap */}
         <div tw="relative">
           <Heading>
-            Democratize AI
+            {heading}
           </Heading>
-          <HeadingText>
-            Our comprehensive automated machine learning (autoML) capabilities transform how AI is created and consumed.
-          </HeadingText>
+          <SubHeading>
+            {subHeading}
+          </SubHeading>
         </div>
-        {/* the first side */}
+        {/* the first section */}
         <FirstContent>
           <div tw="relative">
             <FirstContentList>
@@ -77,6 +81,7 @@ export default function AlternativeSidesWithImage() {
           </div>
 
           <FirstContentImage aria-hidden="true">
+            {/* Gradient Background */}
             <svg className="hidden lg:block absolute left-full transform -translate-x-full translate-y-1/4 blur-3xl opacity-75" width="100%" height="100%" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_17_19)">
                 <g filter="url(#filter0_f_17_19)">
@@ -103,7 +108,7 @@ export default function AlternativeSidesWithImage() {
             />
           </FirstContentImage>
         </FirstContent>
-        {/* the second side */}
+        {/* the second section */}
         <SecondContent>
           <SeccondContentGrid>
             <div tw="lg:col-start-2">
@@ -122,6 +127,7 @@ export default function AlternativeSidesWithImage() {
               </SeconContetnList>
             </div>
             <SecondContentImage>
+              {/* Gradient Background */}
               <svg className="hidden lg:block absolute left-full transform -translate-x-full translate-y-1/4 blur-3xl opacity-75" width="100%" height="100%" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_17_19)">
                   <g filter="url(#filter0_f_17_19)">
@@ -151,4 +157,4 @@ export default function AlternativeSidesWithImage() {
       </Container>
     </BackgroundContainer>
   )
-}
+};

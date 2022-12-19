@@ -1,6 +1,6 @@
 import tw, { styled } from "twin.macro";
 
-export const Container = tw.div`bg-transparent`;
+export const Container = tw.header`bg-transparent`;
 
 export const HeroContainer = styled.div`
     ${tw`mx-auto max-w-3xl py-14 sm:py-32`}

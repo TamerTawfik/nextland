@@ -1,8 +1,14 @@
 //twin-macro
 import tw, { styled } from "twin.macro";
-import { BackgroundContainer, Container, Testimonial } from "./withLargeAvatar.style";
 
-export default function WithLargeAvatar() {
+import { BackgroundContainer, Container, Testimonial } from "./testimonial.style";
+
+export default function WithLargeAvatar({
+  testimonial = "I just wanted to share a quick note and let you know that you guys do a really good job. I’m glad I decided to work with you. I never have any problem at all.",
+  image = "./images/microsoft.svg",
+  name = "John Smith",
+  company = "CEO, Microsoft",
+}) {
   return (
     <BackgroundContainer id="testimonials">
       <Container>
@@ -13,8 +19,8 @@ export default function WithLargeAvatar() {
               alt=""
             />
           </div>
-
           <div tw="relative lg:ml-10">
+            {/* blockquote background */}
             <svg
               className="blockquoteSvg"
               stroke="currentColor"
@@ -30,7 +36,7 @@ export default function WithLargeAvatar() {
             <blockquote tw="relative">
               <div className="text">
                 <p>
-                  I just wanted to share a quick note and let you know that you guys do a really good job. I’m glad I decided to work with you. I never have any problem at all.
+                  {testimonial}
                 </p>
               </div>
               <footer tw="mt-8">
@@ -38,13 +44,13 @@ export default function WithLargeAvatar() {
                   <div tw="flex-shrink-0 lg:hidden">
                     <img
                       tw="h-12 w-12 rounded-full"
-                      src="./images/microsoft.svg"
+                      src={image}
                       alt=""
                     />
                   </div>
                   <div tw="ml-4 lg:ml-0">
-                    <div className="name">John Smith</div>
-                    <div className="company">CEO, Microsoft</div>
+                    <div className="name">{name}</div>
+                    <div className="company">{company}</div>
                   </div>
                 </div>
               </footer>
@@ -54,4 +60,4 @@ export default function WithLargeAvatar() {
       </Container>
     </BackgroundContainer>
   )
-}
+};

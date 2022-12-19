@@ -6,7 +6,7 @@ import SolutionSection from '../components/sections/Solution';
 import FeatureSection from '../components/sections/Feature';
 import PricingSection from "../components/sections/Pricing";
 import StatSection from '../components/sections/Stat';
-import WithLargeAvatar from "../components/sections/Testimonial/WithLargeAvatar";
+import TestimonialSection from "../components/sections/Testimonial";
 import SimpleCTA from "../components/sections/CTA/Simple";
 import CardsWith3column from "../components/sections/Blog/CardsWith3column";
 import CenteredAccordion from "../components/sections/FAQ/CenteredAccordion";
@@ -31,7 +31,7 @@ export default function Home() {
         <FeatureSection />
         <PricingSection />
         <StatSection />
-        <WithLargeAvatar />
+        <TestimonialSection />
         <SimpleCTA />
         <CardsWith3column />
         <CenteredAccordion />

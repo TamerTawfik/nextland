@@ -1,6 +1,6 @@
 //twin-macro
 import tw from "twin.macro";
-import { BackgroundContainer, Container, Heading, LogoWrapper, Grid } from "./simple.style";
+import { BackgroundContainer, Container, Heading, LogoWrapper, Grid } from "./logoClouds.style";
 
 export default function Simple() {
   return (

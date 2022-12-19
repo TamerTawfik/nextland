@@ -21,7 +21,7 @@ export const Grid = styled.div`
     ${tw`flow-root  rounded-lg px-6 pb-8 border border-accents_2 hover:border-accents_6`}
   }
   span {
-    ${tw`inline-flex items-center justify-center p-3 bg-background rounded-full shadow-lg border border-accents_2`}
+    ${tw`inline-flex items-center justify-center p-3 bg-background rounded-full shadow-lg border border-alert`}
   }
   h3 {
     ${tw`mt-8 text-base font-medium text-foreground tracking-wide`}

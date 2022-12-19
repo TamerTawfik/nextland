@@ -1,6 +1,6 @@
 import tw, { styled } from "twin.macro";
 
-export const Container = tw.div`max-w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8`;
+export const Container = tw.div`max-w-full mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 border-t border-accents_2`;
 export const Grid = tw.div`xl:grid xl:grid-cols-3 xl:gap-8`;
 export const MissonSide = styled.div`
   ${tw`space-y-8 xl:col-span-1`}

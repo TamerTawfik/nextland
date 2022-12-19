@@ -1,7 +1,7 @@
 // twin-macro
 import tw from 'twin.macro';
 
-export const BackgroundContainer = tw.div`bg-accents_1 mt-12`;
+export const BackgroundContainer = tw.div`bg-accents_1 mt-12 border-t border-accents_2`;
 export const Container = tw.div`container  py-16 mx-auto lg:flex lg:items-center lg:justify-between`;
 export const Heading = tw.h2`text-3xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-tr from-foreground to-accents_6 xl:text-4xl`;
 export const InputWrap = tw.div`mt-8 lg:mt-0`;

@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Navbar from "../components/common/Navbar";
 import HeroSection from "../components/sections/Hero";
-import Simple from "../components/sections/Logo/Simple";
+import LogoSection from "../components/sections/LogoClouds";
 import GridWithOffseetIcons from '../components/sections/Feature/GridWithOffseetIcons';
 import AlternativeSidesWithImage from '../components/sections/Feature/AlternativeSidesWithImage';
 import ThreeTiersWithEmphasized from "../components/sections/Pricing/ThreeTiersWithEmphasized";
@@ -26,7 +26,7 @@ export default function Home() {
       <main className="bg-background">
         <Navbar />
         <HeroSection />
-        <Simple />
+        <LogoSection />
         {/* Stats Section */}
 
         {/* Feature Section */}

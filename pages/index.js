@@ -11,7 +11,7 @@ import CTASection from "../components/sections/CTA";
 import BlogSection from "../components/sections/Blog";
 import FAQSection from "../components/sections/FAQ";
 import ContactSection from "../components/sections/Contact";
-import WithEmail from "../components/sections/CTA/WithEmail";
+import NewsletterSection from "../components/sections/Newsletter";
 import MissonWith4Column from "../components/sections/Footer/MissonWith4Column";
 
 
@@ -36,7 +36,7 @@ export default function Home() {
         <BlogSection />
         <FAQSection />
         <ContactSection />
-        <WithEmail />
+        <NewsletterSection />
       </main>
       <MissonWith4Column />
     </>

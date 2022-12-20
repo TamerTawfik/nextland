@@ -1,11 +1,9 @@
-// twin-macro
-import tw from 'twin.macro';
-import { BackgroundContainer, Container, Heading, InputWrap, InputContainer, Input, PrimaryLink, Note } from "./withEmail.style";
+import { BackgroundContainer, Container, Heading, InputWrap, InputContainer, Input, PrimaryLink, Note } from "./newsletter.style";
 
-export default function WithEmail({
+export default function Newsletter({
     heading = "Join our Newsletter",
-    primaryLinkUrl = "http://google.com",
     primaryLinkText = "Subscribe",
+    primaryLinkUrl = "#",
     noteText = "We respect your privacy and are committed to protecting your personal data. ",
 }) {
     return (
@@ -14,7 +12,6 @@ export default function WithEmail({
                 <Heading>
                     {heading}
                 </Heading>
-
                 <InputWrap>
                     <InputContainer>
                         <Input id="email" type="text" placeholder="Email Address" />
@@ -22,7 +19,6 @@ export default function WithEmail({
                             {primaryLinkText}
                         </PrimaryLink>
                     </InputContainer>
-
                     <Note>
                         {noteText}
                     </Note>
@@ -30,4 +26,4 @@ export default function WithEmail({
             </Container>
         </BackgroundContainer>
     )
-}
+};

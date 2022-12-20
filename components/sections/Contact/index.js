@@ -1,43 +1,53 @@
 // twin-macro
 import tw, { styled } from "twin.macro";
 
+// hero-icons
 import { HiOutlineEnvelope, HiOutlinePhone } from "react-icons/hi2";
-import { BackgroundContainer, Grid, Column1, Column2 } from "./splitTwo.style";
+
+import { BackgroundContainer, Grid, Column1, Column2 } from "./contact.style";
 
 
-export default function SplitTwo() {
+export default function Contact({
+  heading = "Get in touch",
+  text = "Need to get in touch with us? Either fill out the form with your inquiry or find the phone, email you'd like to contact below.",
+  street = "221B Baker Street",
+  country = "London, England",
+  phone = "+2 (333) 123-4567",
+  email = "support@example.com",
+}) {
   return (
     <BackgroundContainer id="contact">
       <div tw="absolute inset-0">
         <div className="absolute inset-y-0 left-0 w-1/2 bg-background" />
       </div>
       <Grid>
+        {/* Contact Info */}
         <Column1>
           <div tw="max-w-lg mx-auto">
-            <h2>Get in touch</h2>
+            <h2>{heading}</h2>
             <p className="text">
-              Need to get in touch with us? Either fill out the form with your inquiry or find the phone, email you'd like to contact below.
+              {text}
             </p>
             <dl tw="mt-8 text-sm text-foreground">
               <div>
                 <dt className="sr-only">Postal address</dt>
                 <dd>
-                  <p>221B Baker Street</p>
-                  <p>London, England</p>
+                  <p>{street}</p>
+                  <p>{country}</p>
                 </dd>
               </div>
               <div tw="mt-6">
                 <dt className="sr-only">Phone number</dt>
                 <dd className="flex">
                   <HiOutlinePhone className="icon" aria-hidden="true" />
-                  <span tw="ml-3">+2 (333) 123-4567</span>
+                  <span tw="ml-3">{phone}</span>
                 </dd>
               </div>
               <div tw="mt-3">
                 <dt className="sr-only">Email</dt>
                 <dd className="flex">
                   <HiOutlineEnvelope className="icon" aria-hidden="true" />
-                  <span tw="ml-3">support@example.com</span>
+                  <span tw="ml-3">{email}</span>
                 </dd>
               </div>
             </dl>
@@ -49,6 +59,7 @@ export default function SplitTwo() {
             </p>
           </div>
         </Column1>
+        {/* Contact Form */}
         <Column2>
           <div tw="max-w-lg mx-auto lg:max-w-none">
             <form action="#" method="POST">
@@ -113,4 +124,4 @@ export default function SplitTwo() {
       </Grid>
     </BackgroundContainer>
   )
-}
+};

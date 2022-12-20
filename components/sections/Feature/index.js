@@ -46,7 +46,7 @@ const secondFeatures = [
 ]
 
 
-export default function AlternativeSidesWithImage({
+export default function Feature({
   heading = "Democratize AI",
   subHeading = "Our comprehensive automated machine learning (autoML) capabilities transform how AI is created and consumed.",
 }) {

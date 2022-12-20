@@ -3,7 +3,7 @@ import tw, { styled } from "twin.macro";
 
 import { BackgroundContainer, Container, Testimonial } from "./testimonial.style";
 
-export default function WithLargeAvatar({
+export default function Testimonials({
   testimonial = "I just wanted to share a quick note and let you know that you guys do a really good job. I’m glad I decided to work with you. I never have any problem at all.",
   image = "./images/microsoft.svg",
   name = "John Smith",

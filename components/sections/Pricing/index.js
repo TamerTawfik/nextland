@@ -16,7 +16,7 @@ const professionalFeatures = [
 ]
 
 
-export default function ThreeTiersWithEmphasized({
+export default function Pricing({
   headingOne = "Pricing",
   headingTwo = "Get started today",
   subHeading = "Choose which Plan suits your organization best.",

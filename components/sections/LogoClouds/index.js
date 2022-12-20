@@ -2,7 +2,7 @@
 import tw from "twin.macro";
 import { BackgroundContainer, Container, Heading, LogoWrapper, Grid } from "./logoClouds.style";
 
-export default function Simple() {
+export default function LogoClouds() {
   return (
     <BackgroundContainer>
       <Container>

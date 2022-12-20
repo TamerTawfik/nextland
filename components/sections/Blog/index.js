@@ -31,7 +31,7 @@ const posts = [
 ]
 
 
-export default function CardsWith3column({
+export default function Blog({
   headingOne = "Learn more",
   headingTwo = "Updated Blog Post",
 }) {

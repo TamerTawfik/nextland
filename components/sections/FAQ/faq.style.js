@@ -1,7 +1,7 @@
 // twin-macro
 import tw, { styled } from 'twin.macro';
 
-export const BackgroundContainer = tw.section`bg-accents_1 pt-6 pb-16 md:pt-8 md:pb-24  border-t border-accents_2`;
+export const BackgroundContainer = tw.section`bg-accents_1 pt-6 pb-24 md:pt-8 md:pb-32  border-t border-accents_2`;
 
 export const Container = styled.div`
   ${tw`max-w-3xl mx-auto py-6 px-4 sm:py-8 sm:px-6 lg:px-8`}

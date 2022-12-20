@@ -3,7 +3,7 @@ import tw from "twin.macro";
 import { Container, HeroContainer } from "./hero.style";
 
 
-export default function SimpleCentered({
+export default function Hero({
     headingOne = "gpt-3",
     headingTwo = "AI & Machine Learning Development.",
     Text = "We engineer practical data-driven algorithms to implement machine learning solutions for startups by separating the AI hype from computational realities.",

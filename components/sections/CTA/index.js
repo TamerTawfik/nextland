@@ -1,6 +1,6 @@
 import { BackgroundContainer, Container, Heading, LinksContainer, PrimaryLinkWrap, PrimaryLink } from "./cta.style";
 
-export default function Simple({
+export default function CTA({
     heading = 'Start your free trial today.',
     primaryLinkText = "Get started",
     primaryLinkUrl = "#",

@@ -37,7 +37,7 @@ const solutions = [
 ]
 
 
-export default function GridWithOffseetIcons({
+export default function Solution({
   headingOne = "Capabilities",
   headignTwo = "What We Have Done",
   subHeading = "An AI development team comprises of domain experts, data scientists, data engineers, product designers, data modelling experts.",

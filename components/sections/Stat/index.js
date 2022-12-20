@@ -3,7 +3,7 @@ import tw from "twin.macro";
 
 import { BackgroundContainer, StatsWrap, Stat1, Stat2, Stat3, Stats } from "./stat.style";
 
-export default function SimpleInCard({
+export default function Stat({
   state1 = { label: "Complete Project", value: "150k" },
   state2 = { label: "AI Experts", value: "400+" },
   state3 = { label: "Satisfied Clients", value: "3500+" },

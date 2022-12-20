@@ -9,7 +9,7 @@ import StatSection from '../components/sections/Stat';
 import TestimonialSection from "../components/sections/Testimonial";
 import CTASection from "../components/sections/CTA";
 import BlogSection from "../components/sections/Blog";
-import CenteredAccordion from "../components/sections/FAQ/CenteredAccordion";
+import FAQSection from "../components/sections/FAQ";
 import SplitTwo from "../components/sections/Contact/SplitTwo";
 import WithEmail from "../components/sections/CTA/WithEmail";
 import MissonWith4Column from "../components/sections/Footer/MissonWith4Column";
@@ -34,7 +34,7 @@ export default function Home() {
         <TestimonialSection />
         <CTASection />
         <BlogSection />
-        <CenteredAccordion />
+        <FAQSection />
         <SplitTwo />
         <WithEmail />
       </main>

@@ -1,6 +1,7 @@
 // twin-macro
 import tw from "twin.macro";
-import { Container, Header, BlogCard } from "./CardsWith3column.style";
+
+import { Container, Header, BlogCard } from "./blog.style";
 
 const posts = [
   {
@@ -30,13 +31,16 @@ const posts = [
 ]
 
 
-export default function CardsWith3column() {
+export default function CardsWith3column({
+  headingOne = "Learn more",
+  headingTwo = "Updated Blog Post",
+}) {
   return (
     <Container id="blog">
       <div >
         <Header>
-          <h2>Learn more</h2>
-          <h3>Updated Blog Post</h3>
+          <h2>{headingOne}</h2>
+          <h3>{headingTwo}</h3>
         </Header>
         <BlogCard>
           {posts.map((post) => (
@@ -51,7 +55,6 @@ export default function CardsWith3column() {
                     <span aria-hidden="true">&middot;</span>
                     <span>{post.readingTime} read</span>
                   </div>
-
                   <a href={post.href} tw="block mt-2">
                     <p className="title">{post.title}</p>
                   </a>
@@ -71,4 +74,4 @@ export default function CardsWith3column() {
       </div>
     </Container>
   )
-}
+}; 

@@ -75,6 +75,8 @@ module.exports = {
         purple: '#f81ce5',
         alert: '#ff0080',
         magenta: '#eb367f',
+        green: '#0cce6b',
+        info: '#fc6d26',
         link: '#3291ff',
       },
     },

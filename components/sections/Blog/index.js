@@ -9,7 +9,7 @@ const posts = [
     href: '#',
     date: 'Mar 26, 2022',
     imageUrl:
-      './images/blog-1.jpg',
+      './images/blog_1.jpg',
     readingTime: '9 min',
   },
   {
@@ -17,7 +17,7 @@ const posts = [
     href: '#',
     date: 'Jun 10, 2022',
     imageUrl:
-      './images/blog-2.jpg',
+      './images/blog_2.jpg',
     readingTime: '6 min',
   },
   {
@@ -25,7 +25,7 @@ const posts = [
     href: '#',
     date: 'Feb 12, 2022',
     imageUrl:
-      './images/blog-3.jpg',
+      './images/blog_3.jpg',
     readingTime: '14 min',
   },
 ]

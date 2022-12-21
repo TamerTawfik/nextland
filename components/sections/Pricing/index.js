@@ -1,7 +1,7 @@
 // twin-micro
 import tw from "twin.macro";
 // react-icons
-import { HiOutlineCheckBadge } from "react-icons/hi2";
+import { HiOutlineCheckCircle } from "react-icons/hi2";
 
 import { BackgroundContainer, Header, Container, PlansWrap, Grid, Card, CardPopular, } from "./pricing.style";
 
@@ -72,7 +72,7 @@ export default function Pricing({
                         {personalFeatures.map((feature) => (
                           <li key={feature} tw="flex items-start">
                             <div tw="flex-shrink-0">
-                              <HiOutlineCheckBadge className="checkIcon" aria-hidden="true" />
+                              <HiOutlineCheckCircle className="checkIcon" aria-hidden="true" />
                             </div>
                             <p className="feature">{feature}</p>
                           </li>
@@ -126,7 +126,7 @@ export default function Pricing({
                       {professionalFeatures.map((feature) => (
                         <li key={feature} tw="flex items-start">
                           <div tw="flex-shrink-0">
-                            <HiOutlineCheckBadge className="checkIcon" aria-hidden="true" />
+                            <HiOutlineCheckCircle className="checkIcon" aria-hidden="true" />
                           </div>
                           <p className="feature">{feature}</p>
                         </li>
@@ -169,7 +169,7 @@ export default function Pricing({
                         {enterpriseFeatures.map((feature) => (
                           <li key={feature} tw="flex items-start">
                             <div tw="flex-shrink-0">
-                              <HiOutlineCheckBadge className="checkIcon" aria-hidden="true" />
+                              <HiOutlineCheckCircle className="checkIcon" aria-hidden="true" />
                             </div>
                             <p className="feature">{feature}</p>
                           </li>

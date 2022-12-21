@@ -1,13 +1,16 @@
+//twin-micro
 import tw from "twin.macro";
-import { Container, Grid, MissonSide, LinksSide, CopyRights } from "./MissonWith4Column.style";
-import LogoSVG from "../../../common/LogoSVG";
+
+import { Container, Grid, MissonSide, LinksSide, CopyRights } from "./footer.style";
+
+import LogoSVG from "../../common/LogoSVG";
 
 const navigation = {
   solutions: [
-    { name: 'Marketing', href: '#' },
-    { name: 'Analytics', href: '#' },
-    { name: 'Commerce', href: '#' },
-    { name: 'Insights', href: '#' },
+    { name: 'Machine Learning', href: '#' },
+    { name: 'Pattern Recognition', href: '#' },
+    { name: 'Computer Vision', href: '#' },
+    { name: 'Image Processing', href: '#' },
   ],
   support: [
     { name: 'Pricing', href: '#' },
@@ -20,7 +23,6 @@ const navigation = {
     { name: 'Blog', href: '#' },
     { name: 'Jobs', href: '#' },
     { name: 'Press', href: '#' },
-    { name: 'Partners', href: '#' },
   ],
   legal: [
     { name: 'Claim', href: '#' },
@@ -93,7 +95,10 @@ const navigation = {
 }
 
 
-export default function MissonWith4Column() {
+export default function Footer({
+  misson = "Democratize implement AI & machine learning solutions for startups.",
+  copyrights = " 2023 Nextland, Inc. All rights reserved.",
+}) {
   return (
     <footer tw="bg-background" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
@@ -104,7 +109,7 @@ export default function MissonWith4Column() {
           <MissonSide>
             <LogoSVG width={'32'} height={'32'} />
             <p>
-              Democratize implement AI & machine learning solutions for startups.
+              {misson}
             </p>
             <div tw="flex space-x-6">
               {navigation.social.map((item) => (
@@ -171,9 +176,9 @@ export default function MissonWith4Column() {
           </LinksSide>
         </Grid>
         <CopyRights>
-          <p>&copy; 2023 Nextland, Inc. All rights reserved.</p>
+          <p>&copy;{copyrights}</p>
         </CopyRights>
       </Container>
     </footer>
   )
-}
+};

@@ -1,7 +1,7 @@
 import { BackgroundContainer, Container, Heading, InputWrap, InputContainer, Input, PrimaryLink, Note } from "./newsletter.style";
 
 export default function Newsletter({
-    heading = "Join our Newsletter",
+    heading = "Join our Newsletter and get updated.",
     primaryLinkText = "Subscribe",
     primaryLinkUrl = "#",
     noteText = "We respect your privacy and are committed to protecting your personal data. ",

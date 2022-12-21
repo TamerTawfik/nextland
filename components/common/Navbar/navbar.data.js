@@ -6,5 +6,5 @@ export default [
     { name: 'Testimonilas', href: '#testimonials' },
     { name: 'Blog', href: '#blog' },
     { name: 'FAQ', href: '#faq' },
-    { name: 'Contact', href: '#contact' },
+    // { name: 'Contact', href: '#contact' },
 ]

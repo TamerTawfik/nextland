@@ -11,7 +11,7 @@ export const InputWrap = tw.div`mt-8 lg:mt-0`;
 
 export const InputContainer = tw.div`flex flex-col space-y-3 sm:space-y-0 sm:flex-row sm:-mx-2`;
 
-export const Input = tw.input`px-4 py-2 text-foreground bg-background placeholder-accents_5 border border-accents_2 rounded-md sm:mx-2  focus:border-foreground focus:ring-accents_7 focus:outline-none focus:ring focus:ring-opacity-40`;
+export const Input = tw.input`px-4 py-2 text-foreground bg-background placeholder-accents_5 border border-accents_2 rounded-md sm:mx-2  focus:border-accents_5 focus:ring-accents_5 focus:outline-none focus:ring focus:ring-opacity-40`;
 
 export const PrimaryLink = tw.a`inline-flex items-center justify-center px-4 py-2 border border-foreground text-base font-medium rounded-md text-background hover:text-foreground bg-foreground hover:bg-background`;
 

@@ -10,9 +10,9 @@ import TestimonialSection from "../components/sections/Testimonial";
 import CTASection from "../components/sections/CTA";
 import BlogSection from "../components/sections/Blog";
 import FAQSection from "../components/sections/FAQ";
-import ContactSection from "../components/sections/Contact";
+// import ContactSection from "../components/sections/Contact";
 import NewsletterSection from "../components/sections/Newsletter";
-import MissonWith4Column from "../components/sections/Footer/MissonWith4Column";
+import FooterSection from "../components/sections/Footer";
 
 
 export default function Home() {
@@ -35,10 +35,10 @@ export default function Home() {
         <CTASection />
         <BlogSection />
         <FAQSection />
-        <ContactSection />
+        {/* <ContactSection /> */}
         <NewsletterSection />
       </main>
-      <MissonWith4Column />
+      <FooterSection />
     </>
   )
 }

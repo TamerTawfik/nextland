@@ -1,14 +1,17 @@
 //twin-macro
 import tw from "twin.macro";
 
+//Animation wrapper
+import MotionWrap from "../../../helper/MotionWrap";
+
 import { BackgroundContainer, StatsWrap, Stat1, Stat2, Stat3, Stats } from "./stat.style";
 
-export default function Stat({
+const Stat = ({
   state1 = { label: "Complete Project", value: "150k" },
   state2 = { label: "AI Experts", value: "400+" },
   state3 = { label: "Satisfied Clients", value: "3500+" },
   state4 = { label: "Industries Served", value: "50+" },
-}) {
+}) => {
   return (
     <BackgroundContainer>
       <StatsWrap>
@@ -38,3 +41,5 @@ export default function Stat({
     </BackgroundContainer>
   )
 };
+
+export default MotionWrap(Stat);

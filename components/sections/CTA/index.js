@@ -1,10 +1,13 @@
+//Animation wrapper
+import MotionWrap from "../../../helper/MotionWrap";
+
 import { BackgroundContainer, Container, Heading, LinksContainer, PrimaryLinkWrap, PrimaryLink } from "./cta.style";
 
-export default function CTA({
+const CTA = ({
     heading = 'Start your free trial today.',
     primaryLinkText = "Get started",
     primaryLinkUrl = "#",
-}) {
+}) => {
     return (
         <BackgroundContainer>
             <Container>
@@ -22,3 +25,5 @@ export default function CTA({
         </BackgroundContainer>
     )
 };
+
+export default MotionWrap(CTA);

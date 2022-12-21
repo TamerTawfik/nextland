@@ -1,14 +1,17 @@
 //twin-macro
 import tw, { styled } from "twin.macro";
 
+//Animation wrapper
+import MotionWrap from "../../../helper/MotionWrap";
+
 import { BackgroundContainer, Container, Testimonial } from "./testimonial.style";
 
-export default function Testimonials({
+const Testimonials = ({
   testimonial = "I just wanted to share a quick note and let you know that you guys do a really good job. I’m glad I decided to work with you. I never have any problem at all.",
   image = "./images/microsoft.svg",
   name = "John Smith",
   company = "CEO, Microsoft",
-}) {
+}) => {
   return (
     <BackgroundContainer id="testimonials">
       <Container>
@@ -61,3 +64,5 @@ export default function Testimonials({
     </BackgroundContainer>
   )
 };
+
+export default MotionWrap(Testimonials);

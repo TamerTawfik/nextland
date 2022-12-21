@@ -1,5 +1,9 @@
 // twin-micro
 import tw, { styled } from "twin.macro";
+
+//Animation wrapper
+import MotionWrap from "../../../helper/MotionWrap";
+
 // react-icons
 import { HiArrowPath, HiOutlinePencilSquare, HiOutlineCpuChip, HiOutlineCursorArrowRipple, HiOutlineFire } from "react-icons/hi2";
 
@@ -46,10 +50,10 @@ const secondFeatures = [
 ]
 
 
-export default function Feature({
+const Feature = ({
   heading = "Democratize AI",
   subHeading = "Our comprehensive automated machine learning (autoML) capabilities transform how AI is created and consumed.",
-}) {
+}) => {
   return (
     <BackgroundContainer id="features">
       <Container>
@@ -158,3 +162,5 @@ export default function Feature({
     </BackgroundContainer>
   )
 };
+
+export default MotionWrap(Feature);

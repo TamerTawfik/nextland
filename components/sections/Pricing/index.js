@@ -1,5 +1,9 @@
 // twin-micro
 import tw from "twin.macro";
+
+//Animation wrapper
+import MotionWrap from "../../../helper/MotionWrap";
+
 // react-icons
 import { HiOutlineCheckCircle } from "react-icons/hi2";
 
@@ -16,11 +20,11 @@ const professionalFeatures = [
 ]
 
 
-export default function Pricing({
+const Pricing = ({
   headingOne = "Pricing",
   headingTwo = "Get started today",
   subHeading = "Choose which Plan suits your organization best.",
-}) {
+}) => {
   return (
     <BackgroundContainer id="pricing">
       <Header>
@@ -186,3 +190,5 @@ export default function Pricing({
     </BackgroundContainer>
   )
 };
+
+export default MotionWrap(Pricing);

@@ -1,9 +1,15 @@
-import Link from 'next/link'
+import Link from 'next/link';
+
+//twin-micro
 import tw from "twin.macro";
+
+//Animation wrapper
+import MotionWrap from "../../../helper/MotionWrap";
+
 import { Container, HeroContainer } from "./hero.style";
 
 
-export default function Hero({
+const Hero = ({
     headingOne = "gpt-3",
     headingTwo = "AI & Machine Learning Development.",
     Text = "We engineer practical data-driven algorithms to implement machine learning solutions for startups by separating the AI hype from computational realities.",
@@ -11,7 +17,7 @@ export default function Hero({
     primaryButtonkUrl = "#",
     secondaryButtonText = "Live demo",
     secondaryButtonkUrl = "#",
-}) {
+}) => {
 
     return (
         <Container>
@@ -50,3 +56,5 @@ export default function Hero({
         </Container>
     )
 };
+
+export default MotionWrap(Hero);

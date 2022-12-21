@@ -1,13 +1,19 @@
 //twin-macro
 import tw from "twin.macro";
+
+//Animation wrapper
+import MotionWrap from "../../../helper/MotionWrap";
+
 import { BackgroundContainer, Container, Heading, LogoWrapper, Grid } from "./logoClouds.style";
 
-export default function LogoClouds() {
+const LogoClouds = ({
+  heading = "TRUSTED BY LEADING ORGANIZATIONS",
+}) => {
   return (
     <BackgroundContainer>
       <Container>
         <Heading>
-          TRUSTED BY LEADING ORGANIZATIONS
+          {heading}
         </Heading>
         <LogoWrapper>
           <Grid>
@@ -34,4 +40,6 @@ export default function LogoClouds() {
       </Container>
     </BackgroundContainer>
   )
-}
+};
+
+export default MotionWrap(LogoClouds);

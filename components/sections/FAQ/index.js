@@ -4,6 +4,9 @@ import tw, { styled } from 'twin.macro';
 //headlessui/react
 import { Disclosure } from '@headlessui/react';
 
+//Animation wrapper
+import MotionWrap from "../../../helper/MotionWrap";
+
 //react-icons
 import { HiChevronDown } from "react-icons/hi2";
 
@@ -44,7 +47,7 @@ function classNames(...classes) {
 }
 
 
-export default function CenteredAccordion() {
+const FAQ = () => {
   return (
     <BackgroundContainer id="faq">
       <Container>
@@ -79,3 +82,5 @@ export default function CenteredAccordion() {
     </BackgroundContainer>
   )
 };
+
+export default MotionWrap(FAQ);

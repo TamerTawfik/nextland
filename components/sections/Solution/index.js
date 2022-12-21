@@ -1,5 +1,9 @@
 // twin-macro
 import tw from 'twin.macro';
+
+//Animation wrapper
+import MotionWrap from "../../../helper/MotionWrap";
+
 import { BackgroundContainer, Container, Grid } from "./solution.style";
 
 const solutions = [
@@ -37,11 +41,11 @@ const solutions = [
 ]
 
 
-export default function Solution({
+const Solution = ({
   headingOne = "Capabilities",
   headignTwo = "What We Have Done",
   subHeading = "An AI development team comprises of domain experts, data scientists, data engineers, product designers, data modelling experts.",
-}) {
+}) => {
   return (
     <BackgroundContainer id="solutions">
       <Container>
@@ -76,4 +80,6 @@ export default function Solution({
       </Container>
     </BackgroundContainer>
   )
-}
+};
+
+export default MotionWrap(Solution);

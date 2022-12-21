@@ -1,6 +1,9 @@
 // twin-macro
 import tw from "twin.macro";
 
+//Animation wrapper
+import MotionWrap from "../../../helper/MotionWrap";
+
 import { Container, Header, BlogCard } from "./blog.style";
 
 const posts = [
@@ -31,10 +34,10 @@ const posts = [
 ]
 
 
-export default function Blog({
+const Blog = ({
   headingOne = "Learn more",
   headingTwo = "Updated Blog Post",
-}) {
+}) => {
   return (
     <Container id="blog">
       <div >
@@ -74,4 +77,6 @@ export default function Blog({
       </div>
     </Container>
   )
-}; 
+};
+
+export default MotionWrap(Blog);

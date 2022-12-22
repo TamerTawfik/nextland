@@ -4,7 +4,7 @@ import tw, { styled } from "twin.macro";
 export const BackgroundContainer = tw.section`bg-background pt-4 sm:pt-8`;
 
 export const StatsWrap = styled.div`
-  ${tw`mt-4 pb-12 bg-background sm:pb-16`}
+  ${tw`mt-4 pb-6 bg-background sm:pb-8`}
 
   .cardContianer {
     ${tw`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8`}

@@ -39,7 +39,7 @@ const testimonials = [
     name: 'Arlene G. Icenhour',
     company: 'CTO, Shopify',
     testimonial:
-      'They are accommodating to our needs and budget, while also doing a great job. Right away, having a clean space was a load off our minds. We’ve been a customer for four years and our productivity is better, our stress is lower, and our clients are happier ever since we started working with Local Cleaning Service.',
+      'They are accommodating to our needs and budget, We’ve been a customer for four years and our productivity is better, our stress is lower, and our clients are happier ever since we started working with Local Cleaning Service.',
     image: './images/shopify.svg',
   },
 ]
@@ -59,8 +59,6 @@ const Testimonials = () => {
             delay: 5000,
             disableOnInteraction: false
           }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log('slide change')}
         >
           {testimonials.map((item) => (
             <SwiperSlide key={item.id}>

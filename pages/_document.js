@@ -21,7 +21,7 @@ export default class MyDocument extends Document {
 
     render() {
         return (
-            <Html lang="en" style={{ scrollBehavior: 'smooth' }}>
+            <Html lang="en" className="scroll-smooth scroll-pt-32">
                 <Head>
                     <style
                         data-emotion-css={this.props.ids?.join(' ')}

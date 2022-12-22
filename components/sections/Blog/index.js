@@ -61,14 +61,12 @@ const Blog = ({
                   <a href={post.href} tw="block mt-2">
                     <p className="title">{post.title}</p>
                   </a>
-                  <p className="blogLink">
-                    <a href={post.href}>
-                      Learn More
+                  <a href={post.href} className="blogLink inline-block">
+                    Learn More
                       <span tw="ml-1" aria-hidden="true">
-                        &rarr;
+                      &rarr;
                       </span>
-                    </a>
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>

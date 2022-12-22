@@ -31,11 +31,11 @@ export const BlogCard = styled.div`
   }
 
   .blogLink {
-    ${tw`py-6 text-sm font-medium text-[#fc6d26]`}
+    ${tw`my-6 text-sm font-medium text-[#fc6d26] hover:text-foreground`}
   }
 
   .title {
-    ${tw`text-lg font-semibold text-foreground`}
+    ${tw`text-lg font-semibold text-foreground hover:underline`}
   }
 
   .info {

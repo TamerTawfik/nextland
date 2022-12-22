@@ -1,5 +1,7 @@
 // twin-micro
 import tw, { styled } from "twin.macro";
+import { motion } from "framer-motion";
+
 
 export const BackgroundContainer = tw.section`py-16 bg-background overflow-hidden lg:py-24`;
 
@@ -23,7 +25,7 @@ export const FirstContentList = styled.dl`${tw`mt-10 space-y-10`}
 
 export const IconWrap = tw.div`absolute flex items-center justify-center h-12 w-12 rounded-md bg-background text-alert border border-accents_2`;
 
-export const FirstContentImage = tw.div`mt-10 -mx-4 relative lg:mt-0`;
+export const FirstContentImage = motion(tw.div`mt-10 -mx-4 relative lg:mt-0`);
 
 export const SecondContent = tw.div`relative mt-16 sm:mt-24 lg:mt-32`;
 
@@ -39,4 +41,4 @@ export const SeconContetnList = styled.dl`${tw`mt-10 space-y-10`}
   }
 `;
 
-export const SecondContentImage = tw.div`mt-10 -mx-4 relative lg:mt-0 lg:col-start-1`;
+export const SecondContentImage = motion(tw.div`mt-10 -mx-4 relative lg:mt-0 lg:col-start-1`);

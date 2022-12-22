@@ -1,5 +1,6 @@
 // twin-micro
 import tw, { styled } from "twin.macro";
+import { motion } from "framer-motion";
 
 //Animation wrapper
 import MotionWrap from "../../../helper/MotionWrap";
@@ -84,7 +85,9 @@ const Feature = ({
             </FirstContentList>
           </div>
 
-          <FirstContentImage aria-hidden="true">
+          <FirstContentImage aria-hidden="true"
+            whileInView={{ x: [300, 0] }}
+            transition={{ duration: 0.85, ease: 'easeOut' }}>
             {/* Gradient Background */}
             <svg className="hidden lg:block absolute left-full transform -translate-x-full translate-y-1/4 blur-3xl opacity-75" width="100%" height="100%" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_17_19)">
@@ -130,7 +133,8 @@ const Feature = ({
                 ))}
               </SeconContetnList>
             </div>
-            <SecondContentImage>
+            <SecondContentImage whileInView={{ x: [-300, 0] }}
+              transition={{ duration: 0.85, ease: 'easeOut' }}>
               {/* Gradient Background */}
               <svg className="hidden lg:block absolute left-full transform -translate-x-full translate-y-1/4 blur-3xl opacity-75" width="100%" height="100%" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_17_19)">

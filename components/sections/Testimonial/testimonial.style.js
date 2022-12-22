@@ -3,10 +3,19 @@ import tw, { styled } from "twin.macro";
 
 export const BackgroundContainer = tw.section`bg-background overflow-hidden mt-6`;
 
-export const Container = tw.div`relative max-w-6xl mx-auto pt-20 pb-12 px-4 sm:px-6 lg:px-8 lg:py-20`;
+export const Container = styled.div`
+  ${tw`relative max-w-6xl mx-auto pt-20 pb-12 px-4 sm:px-6 lg:px-8 lg:py-32`}
+  
+  .swiper-pagination-bullet {
+    background: green;
+  }
+`;
 
 export const Testimonial = styled.div`
-  ${tw`relative lg:flex lg:items-center`}
+  ${tw`relative lg:flex lg:items-center mt-20`}
+
+  cursor: grabbing;
+  
 
   .imageWrap {
     ${tw`hidden lg:block lg:flex-shrink-0`}

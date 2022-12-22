@@ -7,8 +7,6 @@ import { HiBars2, HiOutlineXMark } from "react-icons/hi2";
 
 import LogoSVG from "../LogoSVG";
 import navigation from "./navbar.data";
-//Animation wrapper
-import MotionWrap from "../../../helper/MotionWrap";
 
 import { NavContainer, Logo, Nav, DialogButton, NavLinks, NavButton, MobileNav } from "./navbar.style";
 
@@ -146,4 +144,4 @@ const Navbar = ({
     )
 };
 
-export default MotionWrap(Navbar);
+export default Navbar;

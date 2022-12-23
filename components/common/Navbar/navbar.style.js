@@ -9,8 +9,8 @@ export const Nav = tw.div`flex h-9 items-center justify-between bg-transparent`;
 export const DialogButton = tw.div`flex lg:hidden`;
 
 export const NavLinks = styled.div`
-    ${tw`hidden lg:flex lg:min-w-0 lg:flex-auto lg:justify-center lg:gap-x-10`}
-    a {${tw`font-normal text-sm text-secondary hover:text-foreground`}}
+    ${tw`hidden lg:flex lg:min-w-0 lg:flex-auto lg:justify-center lg:gap-x-8`}
+    a {${tw`font-normal text-sm text-secondary tracking-wider  hover:text-foreground`}}
 `;
 
 export const NavButton = styled.div`

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import MotionWrap from "../../../helper/MotionWrap";
 
 // react-icons
-import { HiArrowPath, HiOutlinePencilSquare, HiOutlineCpuChip, HiOutlineCursorArrowRipple, HiOutlineFire } from "react-icons/hi2";
+import { HiOutlineArrowUturnRight, HiOutlineClipboardDocumentList, HiOutlineCpuChip, HiOutlineCursorArrowRipple, HiOutlineFire } from "react-icons/hi2";
 
 import { BackgroundContainer, Container, Heading, SubHeading, FirstContent, FirstContentList, FirstContentImage, IconWrap, SeccondContentGrid, SeconContetnList, SecondContent, SecondContentImage } from "./feature.style";
 
@@ -16,14 +16,14 @@ const firstFeatures = [
     name: 'Annotate',
     description:
       'Rely on machine learning forautomatically identifies and labels objects in images, videos, and text.',
-    icon: HiArrowPath,
+    icon: HiOutlineArrowUturnRight,
   },
   {
     id: 2,
     name: 'Manage',
     description:
       'AIOps accelerates digital transformation by providing better endpoint management, smarter help desk tools, efficient infrastructure monitoring.',
-    icon: HiOutlinePencilSquare,
+    icon: HiOutlineClipboardDocumentList,
   },
   {
     id: 3,
@@ -75,7 +75,7 @@ const Feature = ({
                 <div key={item.id} tw="relative">
                   <dt>
                     <IconWrap>
-                      <item.icon tw="h-6 w-6" aria-hidden="true" />
+                      <item.icon tw="h-10 w-10" aria-hidden="true" />
                     </IconWrap>
                     <p>{item.name}</p>
                   </dt>
@@ -124,7 +124,7 @@ const Feature = ({
                   <div key={item.id} className="relative">
                     <dt>
                       <IconWrap>
-                        <item.icon tw="h-6 w-6" aria-hidden="true" />
+                        <item.icon tw="h-10 w-10" aria-hidden="true" />
                       </IconWrap>
                       <p>{item.name}</p>
                     </dt>

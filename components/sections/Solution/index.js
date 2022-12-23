@@ -9,7 +9,7 @@ import { BackgroundContainer, Container, Grid } from "./solution.style";
 const solutions = [
   {
     name: 'Natural Language Processing',
-    description: 'services could give 80% accuracy on extraction tasks involving generic data.',
+    description: 'services could give 80% accuracy on extraction tasks involving generic data. and more...',
     icon: './images/ai-1.png',
   },
   {
@@ -24,7 +24,7 @@ const solutions = [
   },
   {
     name: 'Machine Learning',
-    description: 'Building a solution involving machine learning is much more than the model.',
+    description: 'Building a solution involving machine learning is much more than the model it is a processing.',
     icon: './images/ai-4.png',
   },
   {

@@ -3,29 +3,29 @@ import tw, { styled } from "twin.macro";
 
 export const BackgroundContainer = tw.section`relative bg-background  border-t border-accents_2`;
 
-export const Grid = tw.div`relative max-w-full mx-auto lg:grid lg:grid-cols-5`;
+export const Grid = tw.div`relative max-w-5xl mx-auto lg:grid lg:grid-cols-5`;
 
 export const Column1 = styled.div`
-  ${tw`bg-background py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12`}
+  ${tw`bg-accents_1 py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12`}
 
   h2 {
     ${tw`text-2xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-tr from-foreground to-accents_6 sm:text-3xl`}
   }
 
   .text {
-    ${tw`mt-3 text-base leading-6 text-foreground`}
+    ${tw`mt-3 font-light text-base leading-6 text-accents_7`}
   }
 
   .icon {
-    ${tw`flex-shrink-0 h-6 w-6 text-foreground`}
+    ${tw`flex-shrink-0 h-6 w-6 text-accents_7`}
   }
 
   .careers {
-    ${tw`mt-6 text-base text-foreground`}
+    ${tw`mt-6 font-light text-base text-accents_7`}
   }
 
   a {
-    ${tw`font-normal text-sm text-info hover:underline `}
+    ${tw`font-light text-sm text-info hover:underline `}
   }
 `;
 

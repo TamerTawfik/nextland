@@ -7,10 +7,10 @@ import MotionWrap from "../../../helper/MotionWrap";
 import { BackgroundContainer, StatsWrap, Stat1, Stat2, Stat3, Stats } from "./stat.style";
 
 const Stat = ({
-  state1 = { label: "Complete Project", value: "150" },
-  state2 = { label: "AI Experts", value: "400" },
-  state3 = { label: "Satisfied Clients", value: "3500" },
-  state4 = { label: "Industries Served", value: "50" },
+  state1 = { label: "Complete Project", value: "150", suffix: "K" },
+  state2 = { label: "AI Experts", value: "400", suffix: "+" },
+  state3 = { label: "Satisfied Clients", value: "3500", suffix: "+" },
+  state4 = { label: "Industries Served", value: "50", suffix: "+" },
 }) => {
   return (
     <BackgroundContainer>
@@ -24,7 +24,7 @@ const Stat = ({
                   <CountUp
                     end={state1.value}
                     duration={2.75}
-                    suffix=" K"
+                    suffix={state1.suffix}
                     enableScrollSpy
                   />
                 </dd>
@@ -35,7 +35,7 @@ const Stat = ({
                   <CountUp
                     end={state2.value}
                     duration={2.75}
-                    suffix="+"
+                    suffix={state2.suffix}
                     enableScrollSpy
                   />
                 </dd>
@@ -46,7 +46,7 @@ const Stat = ({
                   <CountUp
                     end={state3.value}
                     duration={2.75}
-                    suffix="+"
+                    suffix={state3.suffix}
                     enableScrollSpy
                   />
                 </dd>
@@ -57,7 +57,7 @@ const Stat = ({
                   <CountUp
                     end={state4.value}
                     duration={2.75}
-                    suffix="+"
+                    suffix={state4.suffix}
                     enableScrollSpy
                   />
                 </dd>

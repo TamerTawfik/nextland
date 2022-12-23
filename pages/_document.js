@@ -29,7 +29,7 @@ export default class MyDocument extends Document {
                     />
                     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
                 </Head>
-                <body className="font-sans bg-background">
+                <body className="scrollbar scrollbar-thumb-accents_4 scrollbar-track-accents_3 font-sans bg-background">
                     <Main />
                     <NextScript />
                 </body>

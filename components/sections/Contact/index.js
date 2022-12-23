@@ -4,17 +4,20 @@ import tw, { styled } from "twin.macro";
 // hero-icons
 import { HiOutlineEnvelope, HiOutlinePhone } from "react-icons/hi2";
 
+//Animation wrapper
+import MotionWrap from "../../../helper/MotionWrap";
+
 import { BackgroundContainer, Grid, Column1, Column2 } from "./contact.style";
 
 
-export default function Contact({
+const Contact = ({
   heading = "Get in touch",
   text = "Need to get in touch with us? Either fill out the form with your inquiry or find the phone, email you'd like to contact below.",
   street = "221B Baker Street",
   country = "London, England",
   phone = "+2 (333) 123-4567",
   email = "support@example.com",
-}) {
+}) => {
   return (
     <BackgroundContainer id="contact">
       <div tw="absolute inset-0">
@@ -125,3 +128,5 @@ export default function Contact({
     </BackgroundContainer>
   )
 };
+
+export default MotionWrap(Contact);

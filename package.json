@@ -22,7 +22,8 @@
     "react-countup": "^6.4.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.6.0",
-    "swiper": "^8.4.5"
+    "swiper": "^8.4.5",
+    "tailwindcss-scrollbar": "^0.1.0"
   },
   "devDependencies": {
     "@emotion/babel-plugin": "^11.10.5",

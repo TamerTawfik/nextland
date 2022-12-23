@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require('tailwindcss/defaultTheme')
-const colors = require('tailwindcss/colors')
 
 module.exports = {
   content: [
@@ -8,7 +7,6 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class',
   theme: {
     extend: {
       'animation': {
@@ -30,14 +28,6 @@ module.exports = {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        teal: colors.teal,
-        cyan: colors.cyan,
-        brand: '#FF6363',
-        eucalyptus: '#49DDAD',
-        surf: '#0AB7D1',
-        eerie: '#1D1D1B',
-        lotion: '#FAFAFA',
-        vampirBlack: '#050b07',
         accents_1: '#111',
         accents_2: '#333',
         accents_3: '#444',
@@ -84,5 +74,6 @@ module.exports = {
   plugins: [
     require('@tailwindcss/forms'),
     require('@tailwindcss/aspect-ratio'),
+    require("tailwindcss-scrollbar"),
   ],
 }

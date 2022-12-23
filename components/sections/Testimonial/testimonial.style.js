@@ -16,7 +16,6 @@ export const Testimonial = styled.div`
 
   cursor: grab;
   
-
   .imageWrap {
     ${tw`hidden lg:block lg:flex-shrink-0`}
     img {${tw`h-32 w-32 rounded-full xl:h-60 xl:w-60`}}
@@ -27,7 +26,7 @@ export const Testimonial = styled.div`
   }
 
   .text {
-    ${tw`text-xl leading-9 font-medium text-foreground`}
+    ${tw`text-lg tracking-wider leading-9 font-normal text-foreground`}
   }
 
   .name {

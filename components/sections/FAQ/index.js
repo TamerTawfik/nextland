@@ -5,7 +5,7 @@ import tw, { styled } from 'twin.macro';
 import { Disclosure } from '@headlessui/react';
 
 //Animation wrapper
-import MotionWrap from "../../../helper/MotionWrap";
+import MotionWrap from "../../common/MotionWrap";
 
 //react-icons
 import { HiChevronDown } from "react-icons/hi2";

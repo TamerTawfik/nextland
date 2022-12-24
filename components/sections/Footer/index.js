@@ -2,7 +2,7 @@
 import tw from "twin.macro";
 
 //Animation wrapper
-import MotionWrap from "../../../helper/MotionWrap";
+import MotionWrap from "../../common/MotionWrap";
 
 import { Container, Grid, MissonSide, LinksSide, CopyRights } from "./footer.style";
 

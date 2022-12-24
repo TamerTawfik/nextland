@@ -2,7 +2,7 @@
 import tw from "twin.macro";
 
 //Animation wrapper
-import MotionWrap from "../../../helper/MotionWrap";
+import MotionWrap from "../../common/MotionWrap";
 
 // react-icons
 import { HiOutlineCheckCircle } from "react-icons/hi2";

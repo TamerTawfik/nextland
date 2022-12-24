@@ -4,7 +4,7 @@ import Link from 'next/link';
 import tw from "twin.macro";
 
 //Animation wrapper
-import MotionWrap from "../../../helper/MotionWrap";
+import MotionWrap from "../../common/MotionWrap";
 
 import { Container, HeroContainer } from "./hero.style";
 

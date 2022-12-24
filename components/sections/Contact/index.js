@@ -5,7 +5,7 @@ import tw, { styled } from "twin.macro";
 import { HiOutlineEnvelope, HiOutlinePhone } from "react-icons/hi2";
 
 //Animation wrapper
-import MotionWrap from "../../../helper/MotionWrap";
+import MotionWrap from "../../common/MotionWrap";
 
 import { BackgroundContainer, Grid, Column1, Column2 } from "./contact.style";
 

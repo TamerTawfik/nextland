@@ -3,7 +3,7 @@ import tw, { styled } from "twin.macro";
 import { motion } from "framer-motion";
 
 //Animation wrapper
-import MotionWrap from "../../../helper/MotionWrap";
+import MotionWrap from "../../common/MotionWrap";
 
 // react-icons
 import { HiOutlineArrowUturnRight, HiOutlineClipboardDocumentList, HiOutlineCpuChip, HiOutlineCursorArrowRipple, HiOutlineFire } from "react-icons/hi2";

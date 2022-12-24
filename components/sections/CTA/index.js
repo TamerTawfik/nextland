@@ -1,5 +1,5 @@
 //Animation wrapper
-import MotionWrap from "../../../helper/MotionWrap";
+import MotionWrap from "../../common/MotionWrap";
 
 import { BackgroundContainer, Container, Heading, LinksContainer, PrimaryLinkWrap, PrimaryLink } from "./cta.style";
 

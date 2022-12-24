@@ -14,7 +14,7 @@ import 'swiper/css/pagination';
 SwiperCore.use([Autoplay])
 
 //Animation wrapper
-import MotionWrap from "../../../helper/MotionWrap";
+import MotionWrap from "../../common/MotionWrap";
 
 import { BackgroundContainer, Container, Testimonial } from "./testimonial.style";
 

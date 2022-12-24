@@ -4,7 +4,8 @@ import tw from "twin.macro";
 import CountUp from 'react-countup';
 
 //Animation wrapper
-import MotionWrap from "../../../helper/MotionWrap";
+import MotionWrap from "../../common/MotionWrap";
+
 import { BackgroundContainer, StatsWrap, Stat1, Stat2, Stat3, Stats } from "./stat.style";
 
 const Stat = ({

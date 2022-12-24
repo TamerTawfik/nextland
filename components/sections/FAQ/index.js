@@ -6,7 +6,7 @@ import { Disclosure } from '@headlessui/react';
 
 <<<<<<< HEAD
 //Animation wrapper
-import MotionWrap from "../../../helper/MotionWrap";
+import MotionWrap from "../../common/MotionWrap";
 
 =======
 >>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1

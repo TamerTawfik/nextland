@@ -3,7 +3,7 @@ import tw from "twin.macro";
 <<<<<<< HEAD
 
 //Animation wrapper
-import MotionWrap from "../../../helper/MotionWrap";
+import MotionWrap from "../../common/MotionWrap";
 
 import { BackgroundContainer, Container, Heading, LogoWrapper, Grid } from "./logoClouds.style";
 

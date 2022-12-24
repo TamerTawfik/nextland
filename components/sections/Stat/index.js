@@ -1,5 +1,6 @@
 //twin-macro
 import tw from "twin.macro";
+<<<<<<< HEAD
 import CountUp from 'react-countup';
 
 //Animation wrapper
@@ -12,6 +13,17 @@ const Stat = ({
   state3 = { label: "Satisfied Clients", value: "3500", suffix: "+" },
   state4 = { label: "Industries Served", value: "50", suffix: "+" },
 }) => {
+=======
+
+import { BackgroundContainer, StatsWrap, Stat1, Stat2, Stat3, Stats } from "./stat.style";
+
+export default function Stat({
+  state1 = { label: "Complete Project", value: "150k" },
+  state2 = { label: "AI Experts", value: "400+" },
+  state3 = { label: "Satisfied Clients", value: "3500+" },
+  state4 = { label: "Industries Served", value: "50+" },
+}) {
+>>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
   return (
     <BackgroundContainer>
       <StatsWrap>
@@ -20,6 +32,7 @@ const Stat = ({
             <Stats>
               <Stat1>
                 <dt className="label">{state1.label}</dt>
+<<<<<<< HEAD
                 <dd className="value">
                   <CountUp
                     end={state1.value}
@@ -61,6 +74,21 @@ const Stat = ({
                     enableScrollSpy
                   />
                 </dd>
+=======
+                <dd className="value">{state1.value}</dd>
+              </Stat1>
+              <Stat2>
+                <dt className="label">{state2.label}</dt>
+                <dd className="value">{state2.value}</dd>
+              </Stat2>
+              <Stat2>
+                <dt className="label">{state3.label}</dt>
+                <dd className="value">{state3.value}</dd>
+              </Stat2>
+              <Stat3>
+                <dt className="label">{state4.label}</dt>
+                <dd className="value">{state4.value}</dd>
+>>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
               </Stat3>
             </Stats>
           </div>
@@ -69,5 +97,8 @@ const Stat = ({
     </BackgroundContainer>
   )
 };
+<<<<<<< HEAD
 
 export default MotionWrap(Stat);
+=======
+>>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1

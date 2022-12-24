@@ -3,16 +3,24 @@ import tw, { styled } from "twin.macro";
 
 export const BackgroundContainer = tw.section`relative bg-background  border-t border-accents_2`;
 
+<<<<<<< HEAD
 export const Grid = tw.div`relative max-w-5xl mx-auto lg:grid lg:grid-cols-5`;
 
 export const Column1 = styled.div`
   ${tw`bg-accents_1 py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12`}
+=======
+export const Grid = tw.div`relative max-w-full mx-auto lg:grid lg:grid-cols-5`;
+
+export const Column1 = styled.div`
+  ${tw`bg-background py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-12`}
+>>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
 
   h2 {
     ${tw`text-2xl font-extrabold tracking-tight bg-clip-text text-transparent bg-gradient-to-tr from-foreground to-accents_6 sm:text-3xl`}
   }
 
   .text {
+<<<<<<< HEAD
     ${tw`mt-3 font-light text-base leading-6 text-accents_7`}
   }
 
@@ -26,6 +34,21 @@ export const Column1 = styled.div`
 
   a {
     ${tw`font-light text-sm text-info hover:underline `}
+=======
+    ${tw`mt-3 text-base leading-6 text-foreground`}
+  }
+
+  .icon {
+    ${tw`flex-shrink-0 h-6 w-6 text-foreground`}
+  }
+
+  .careers {
+    ${tw`mt-6 text-base text-foreground`}
+  }
+
+  a {
+    ${tw`font-normal text-sm text-info hover:underline `}
+>>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
   }
 `;
 

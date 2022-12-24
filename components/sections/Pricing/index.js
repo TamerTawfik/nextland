@@ -1,5 +1,6 @@
 // twin-micro
 import tw from "twin.macro";
+<<<<<<< HEAD
 
 //Animation wrapper
 import MotionWrap from "../../../helper/MotionWrap";
@@ -7,6 +8,11 @@ import MotionWrap from "../../../helper/MotionWrap";
 // react-icons
 import { HiOutlineCheckCircle } from "react-icons/hi2";
 
+=======
+// react-icons
+import { HiOutlineCheckCircle } from "react-icons/hi2";
+
+>>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
 import { BackgroundContainer, Header, Container, PlansWrap, Grid, Card, CardPopular, } from "./pricing.style";
 
 const personalFeatures = ['Only 1 user seat', '5 projects', '7-day free trial of Pro Plan']
@@ -20,11 +26,19 @@ const professionalFeatures = [
 ]
 
 
+<<<<<<< HEAD
 const Pricing = ({
   headingOne = "Pricing",
   headingTwo = "Get started today",
   subHeading = "Choose which Plan suits your organization best.",
 }) => {
+=======
+export default function Pricing({
+  headingOne = "Pricing",
+  headingTwo = "Get started today",
+  subHeading = "Choose which Plan suits your organization best.",
+}) {
+>>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
   return (
     <BackgroundContainer id="pricing">
       <Header>
@@ -190,5 +204,8 @@ const Pricing = ({
     </BackgroundContainer>
   )
 };
+<<<<<<< HEAD
 
 export default MotionWrap(Pricing);
+=======
+>>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1

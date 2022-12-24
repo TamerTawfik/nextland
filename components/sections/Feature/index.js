@@ -1,5 +1,6 @@
 // twin-micro
 import tw, { styled } from "twin.macro";
+<<<<<<< HEAD
 import { motion } from "framer-motion";
 
 //Animation wrapper
@@ -7,6 +8,10 @@ import MotionWrap from "../../../helper/MotionWrap";
 
 // react-icons
 import { HiOutlineArrowUturnRight, HiOutlineClipboardDocumentList, HiOutlineCpuChip, HiOutlineCursorArrowRipple, HiOutlineFire } from "react-icons/hi2";
+=======
+// react-icons
+import { HiArrowPath, HiOutlinePencilSquare, HiOutlineCpuChip, HiOutlineCursorArrowRipple, HiOutlineFire } from "react-icons/hi2";
+>>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
 
 import { BackgroundContainer, Container, Heading, SubHeading, FirstContent, FirstContentList, FirstContentImage, IconWrap, SeccondContentGrid, SeconContetnList, SecondContent, SecondContentImage } from "./feature.style";
 
@@ -16,14 +21,22 @@ const firstFeatures = [
     name: 'Annotate',
     description:
       'Rely on machine learning forautomatically identifies and labels objects in images, videos, and text.',
+<<<<<<< HEAD
     icon: HiOutlineArrowUturnRight,
+=======
+    icon: HiArrowPath,
+>>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
   },
   {
     id: 2,
     name: 'Manage',
     description:
       'AIOps accelerates digital transformation by providing better endpoint management, smarter help desk tools, efficient infrastructure monitoring.',
+<<<<<<< HEAD
     icon: HiOutlineClipboardDocumentList,
+=======
+    icon: HiOutlinePencilSquare,
+>>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
   },
   {
     id: 3,
@@ -51,10 +64,17 @@ const secondFeatures = [
 ]
 
 
+<<<<<<< HEAD
 const Feature = ({
   heading = "Democratize AI",
   subHeading = "Our comprehensive automated machine learning (autoML) capabilities transform how AI is created and consumed.",
 }) => {
+=======
+export default function Feature({
+  heading = "Democratize AI",
+  subHeading = "Our comprehensive automated machine learning (autoML) capabilities transform how AI is created and consumed.",
+}) {
+>>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
   return (
     <BackgroundContainer id="features">
       <Container>
@@ -75,7 +95,11 @@ const Feature = ({
                 <div key={item.id} tw="relative">
                   <dt>
                     <IconWrap>
+<<<<<<< HEAD
                       <item.icon tw="h-10 w-10" aria-hidden="true" />
+=======
+                      <item.icon tw="h-6 w-6" aria-hidden="true" />
+>>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
                     </IconWrap>
                     <p>{item.name}</p>
                   </dt>
@@ -85,9 +109,13 @@ const Feature = ({
             </FirstContentList>
           </div>
 
+<<<<<<< HEAD
           <FirstContentImage aria-hidden="true"
             whileInView={{ x: [300, 0] }}
             transition={{ duration: 0.95, ease: 'easeOut' }}>
+=======
+          <FirstContentImage aria-hidden="true">
+>>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
             {/* Gradient Background */}
             <svg className="hidden lg:block absolute left-full transform -translate-x-full translate-y-1/4 blur-3xl opacity-75" width="100%" height="100%" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_17_19)">
@@ -124,7 +152,11 @@ const Feature = ({
                   <div key={item.id} className="relative">
                     <dt>
                       <IconWrap>
+<<<<<<< HEAD
                         <item.icon tw="h-10 w-10" aria-hidden="true" />
+=======
+                        <item.icon tw="h-6 w-6" aria-hidden="true" />
+>>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
                       </IconWrap>
                       <p>{item.name}</p>
                     </dt>
@@ -133,8 +165,12 @@ const Feature = ({
                 ))}
               </SeconContetnList>
             </div>
+<<<<<<< HEAD
             <SecondContentImage whileInView={{ x: [-300, 0] }}
               transition={{ duration: 0.95, ease: 'easeOut' }}>
+=======
+            <SecondContentImage>
+>>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
               {/* Gradient Background */}
               <svg className="hidden lg:block absolute left-full transform -translate-x-full translate-y-1/4 blur-3xl opacity-75" width="100%" height="100%" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_17_19)">
@@ -166,5 +202,8 @@ const Feature = ({
     </BackgroundContainer>
   )
 };
+<<<<<<< HEAD
 
 export default MotionWrap(Feature);
+=======
+>>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1

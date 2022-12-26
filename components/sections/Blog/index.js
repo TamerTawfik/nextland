@@ -1,12 +1,9 @@
 // twin-macro
 import tw from "twin.macro";
 
-<<<<<<< HEAD
 //Animation wrapper
 import MotionWrap from "../../common/MotionWrap";
 
-=======
->>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
 import { Container, Header, BlogCard } from "./blog.style";
 
 const posts = [
@@ -37,17 +34,10 @@ const posts = [
 ]
 
 
-<<<<<<< HEAD
 const Blog = ({
   headingOne = "Learn more",
   headingTwo = "Updated Blog Post",
 }) => {
-=======
-export default function Blog({
-  headingOne = "Learn more",
-  headingTwo = "Updated Blog Post",
-}) {
->>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
   return (
     <Container id="blog">
       <div >
@@ -71,23 +61,12 @@ export default function Blog({
                   <a href={post.href} tw="block mt-2">
                     <p className="title">{post.title}</p>
                   </a>
-<<<<<<< HEAD
                   <a href={post.href} className="blogLink inline-block">
                     Learn More
                       <span tw="ml-1" aria-hidden="true">
                       &rarr;
                       </span>
                   </a>
-=======
-                  <p className="blogLink">
-                    <a href={post.href}>
-                      Learn More
-                      <span tw="ml-1" aria-hidden="true">
-                        &rarr;
-                      </span>
-                    </a>
-                  </p>
->>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
                 </div>
               </div>
             </div>
@@ -96,10 +75,6 @@ export default function Blog({
       </div>
     </Container>
   )
-<<<<<<< HEAD
 };
 
 export default MotionWrap(Blog);
-=======
-}; 
->>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1

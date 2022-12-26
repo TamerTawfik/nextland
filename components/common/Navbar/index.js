@@ -5,7 +5,6 @@ import { Dialog } from '@headlessui/react'
 import { HiBars2, HiOutlineXMark } from "react-icons/hi2";
 
 import LogoSVG from "../LogoSVG";
-import navigation from "./navbar.data";
 import { NavContainer, Logo, Nav, DialogButton, NavLinks, NavButton, MobileNav } from "./navbar.style";
 
 const navigation = [

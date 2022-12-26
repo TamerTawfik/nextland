@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import Link from 'next/link';
 
 //twin-micro
@@ -11,14 +10,6 @@ import { Container, HeroContainer } from "./hero.style";
 
 
 const Hero = ({
-=======
-import Link from 'next/link'
-import tw from "twin.macro";
-import { Container, HeroContainer } from "./hero.style";
-
-
-export default function Hero({
->>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
     headingOne = "gpt-3",
     headingTwo = "AI & Machine Learning Development.",
     Text = "We engineer practical data-driven algorithms to implement machine learning solutions for startups by separating the AI hype from computational realities.",
@@ -26,11 +17,7 @@ export default function Hero({
     primaryButtonkUrl = "#",
     secondaryButtonText = "Live demo",
     secondaryButtonkUrl = "#",
-<<<<<<< HEAD
 }) => {
-=======
-}) {
->>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
 
     return (
         <Container>
@@ -69,8 +56,5 @@ export default function Hero({
         </Container>
     )
 };
-<<<<<<< HEAD
 
 export default MotionWrap(Hero);
-=======
->>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1

@@ -1,12 +1,9 @@
 //twin-micro
 import tw from "twin.macro";
 
-<<<<<<< HEAD
 //Animation wrapper
 import MotionWrap from "../../common/MotionWrap";
 
-=======
->>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
 import { Container, Grid, MissonSide, LinksSide, CopyRights } from "./footer.style";
 
 import LogoSVG from "../../common/LogoSVG";
@@ -101,17 +98,10 @@ const navigation = {
 }
 
 
-<<<<<<< HEAD
 const Footer = ({
   misson = "Democratize implement AI & machine learning solutions for startups.",
   copyrights = " 2023 Nextland, Inc. All rights reserved.",
 }) => {
-=======
-export default function Footer({
-  misson = "Democratize implement AI & machine learning solutions for startups.",
-  copyrights = " 2023 Nextland, Inc. All rights reserved.",
-}) {
->>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
   return (
     <footer tw="bg-background" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">
@@ -195,8 +185,5 @@ export default function Footer({
     </footer>
   )
 };
-<<<<<<< HEAD
 
 export default MotionWrap(Footer);
-=======
->>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1

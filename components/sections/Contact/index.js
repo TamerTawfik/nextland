@@ -4,7 +4,6 @@ import tw, { styled } from "twin.macro";
 // hero-icons
 import { HiOutlineEnvelope, HiOutlinePhone } from "react-icons/hi2";
 
-<<<<<<< HEAD
 //Animation wrapper
 import MotionWrap from "../../common/MotionWrap";
 
@@ -12,23 +11,13 @@ import { BackgroundContainer, Grid, Column1, Column2 } from "./contact.style";
 
 
 const Contact = ({
-=======
-import { BackgroundContainer, Grid, Column1, Column2 } from "./contact.style";
-
-
-export default function Contact({
->>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
   heading = "Get in touch",
   text = "Need to get in touch with us? Either fill out the form with your inquiry or find the phone, email you'd like to contact below.",
   street = "221B Baker Street",
   country = "London, England",
   phone = "+2 (333) 123-4567",
   email = "support@example.com",
-<<<<<<< HEAD
 }) => {
-=======
-}) {
->>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
   return (
     <BackgroundContainer id="contact">
       <div tw="absolute inset-0">
@@ -139,8 +128,5 @@ export default function Contact({
     </BackgroundContainer>
   )
 };
-<<<<<<< HEAD
 
 export default MotionWrap(Contact);
-=======
->>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1

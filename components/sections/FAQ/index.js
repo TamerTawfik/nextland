@@ -4,12 +4,9 @@ import tw, { styled } from 'twin.macro';
 //headlessui/react
 import { Disclosure } from '@headlessui/react';
 
-<<<<<<< HEAD
 //Animation wrapper
 import MotionWrap from "../../common/MotionWrap";
 
-=======
->>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
 //react-icons
 import { HiChevronDown } from "react-icons/hi2";
 
@@ -50,11 +47,7 @@ function classNames(...classes) {
 }
 
 
-<<<<<<< HEAD
 const FAQ = () => {
-=======
-export default function CenteredAccordion() {
->>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
   return (
     <BackgroundContainer id="faq">
       <Container>
@@ -89,8 +82,5 @@ export default function CenteredAccordion() {
     </BackgroundContainer>
   )
 };
-<<<<<<< HEAD
 
 export default MotionWrap(FAQ);
-=======
->>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1

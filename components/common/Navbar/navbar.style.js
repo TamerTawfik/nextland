@@ -9,13 +9,8 @@ export const Nav = tw.div`flex h-9 items-center justify-between bg-transparent`;
 export const DialogButton = tw.div`flex lg:hidden`;
 
 export const NavLinks = styled.div`
-<<<<<<< HEAD
     ${tw`hidden lg:flex lg:min-w-0 lg:flex-auto lg:justify-center lg:gap-x-8`}
     a {${tw`font-normal text-sm text-secondary tracking-wider  hover:text-foreground`}}
-=======
-    ${tw`hidden lg:flex lg:min-w-0 lg:flex-auto lg:justify-center lg:gap-x-10`}
-    a {${tw`font-normal text-sm text-secondary hover:text-foreground`}}
->>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
 `;
 
 export const NavButton = styled.div`
@@ -35,4 +30,3 @@ export const MobileNav = styled.div`
         a {${tw`-mx-3 block rounded-lg py-2 px-3 text-sm font-medium leading-7 text-foreground hover:bg-accents_1`}}
     }
 `;
-

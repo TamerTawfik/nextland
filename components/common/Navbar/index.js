@@ -2,9 +2,11 @@ import { useEffect, useState } from 'react';
 import Link from "next/link";
 import tw from "twin.macro";
 import { Dialog } from '@headlessui/react'
+import { motion } from "framer-motion";
 import { HiBars2, HiOutlineXMark } from "react-icons/hi2";
 
 import LogoSVG from "../LogoSVG";
+
 import { NavContainer, Logo, Nav, DialogButton, NavLinks, NavButton, MobileNav } from "./navbar.style";
 
 const navigation = [
@@ -41,14 +43,14 @@ const useScrollPosition = () => {
     return scrollPosition;
 };
 
-export default function SimpleCentered({
+const Navbar = ({
     logo = "Nextland",
     logoUrl = "/",
     primaryLinkText = "Login",
     primaryLinkUrl = "#",
     secondaryLinkText = "Sign Up",
     secondaryLinkUrl = "#",
-}) {
+}) => {
     // Toggle Mobile Menu
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     // Call scroll detection posotion
@@ -119,7 +121,10 @@ export default function SimpleCentered({
                         </div>
                     </div>
                     <MobileNav>
-                        <div className="wrapper">
+                        <motion.div
+                            whileInView={{ x: [300, 0] }}
+                            transition={{ duration: 0.5, ease: 'easeOut' }}
+                            className="wrapper">
                             <div tw="space-y-2 py-6">
                                 {navigation.map((item) => (
                                     <Link
@@ -140,10 +145,12 @@ export default function SimpleCentered({
                                     {secondaryLinkText}
                                 </Link>
                             </div>
-                        </div>
+                        </motion.div>
                     </MobileNav>
                 </Dialog.Panel>
             </Dialog>
         </NavContainer>
     )
 };
+
+export default Navbar;

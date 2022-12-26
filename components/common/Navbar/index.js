@@ -6,9 +6,18 @@ import { motion } from "framer-motion";
 import { HiBars2, HiOutlineXMark } from "react-icons/hi2";
 
 import LogoSVG from "../LogoSVG";
-import navigation from "./navbar.data";
 
 import { NavContainer, Logo, Nav, DialogButton, NavLinks, NavButton, MobileNav } from "./navbar.style";
+
+const navigation = [
+    { name: 'Solutions', href: '#solutions' },
+    { name: 'Features', href: '#features' },
+    { name: 'Pricing', href: '#pricing' },
+    { name: 'Testimonilas', href: '#testimonials' },
+    { name: 'Blog', href: '#blog' },
+    { name: 'FAQ', href: '#faq' },
+    { name: 'Contact', href: '#contact' },
+]
 
 // Add classes based on Boolean for the Navbar
 function classNames(...classes) {

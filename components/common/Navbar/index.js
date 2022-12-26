@@ -2,19 +2,21 @@ import { useEffect, useState } from 'react';
 import Link from "next/link";
 import tw from "twin.macro";
 import { Dialog } from '@headlessui/react'
-<<<<<<< HEAD
-import { motion } from "framer-motion";
-=======
->>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
 import { HiBars2, HiOutlineXMark } from "react-icons/hi2";
 
 import LogoSVG from "../LogoSVG";
 import navigation from "./navbar.data";
-<<<<<<< HEAD
-
-=======
->>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
 import { NavContainer, Logo, Nav, DialogButton, NavLinks, NavButton, MobileNav } from "./navbar.style";
+
+const navigation = [
+    { name: 'Solutions', href: '#solutions' },
+    { name: 'Features', href: '#features' },
+    { name: 'Pricing', href: '#pricing' },
+    { name: 'Testimonilas', href: '#testimonials' },
+    { name: 'Blog', href: '#blog' },
+    { name: 'FAQ', href: '#faq' },
+    { name: 'Contact', href: '#contact' },
+]
 
 // Add classes based on Boolean for the Navbar
 function classNames(...classes) {
@@ -40,22 +42,14 @@ const useScrollPosition = () => {
     return scrollPosition;
 };
 
-<<<<<<< HEAD
-const Navbar = ({
-=======
 export default function SimpleCentered({
->>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
     logo = "Nextland",
     logoUrl = "/",
     primaryLinkText = "Login",
     primaryLinkUrl = "#",
     secondaryLinkText = "Sign Up",
     secondaryLinkUrl = "#",
-<<<<<<< HEAD
-}) => {
-=======
 }) {
->>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
     // Toggle Mobile Menu
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     // Call scroll detection posotion
@@ -126,14 +120,7 @@ export default function SimpleCentered({
                         </div>
                     </div>
                     <MobileNav>
-<<<<<<< HEAD
-                        <motion.div
-                            whileInView={{ x: [300, 0] }}
-                            transition={{ duration: 0.5, ease: 'easeOut' }}
-                            className="wrapper">
-=======
                         <div className="wrapper">
->>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
                             <div tw="space-y-2 py-6">
                                 {navigation.map((item) => (
                                     <Link
@@ -154,20 +141,10 @@ export default function SimpleCentered({
                                     {secondaryLinkText}
                                 </Link>
                             </div>
-<<<<<<< HEAD
-                        </motion.div>
-=======
                         </div>
->>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
                     </MobileNav>
                 </Dialog.Panel>
             </Dialog>
         </NavContainer>
     )
-<<<<<<< HEAD
 };
-
-export default Navbar;
-=======
-};
->>>>>>> 98fc21ae46b76d2e012fd7f55cd0a9b8073b3bb1
